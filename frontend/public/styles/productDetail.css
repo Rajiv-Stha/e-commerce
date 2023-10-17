@@ -1,0 +1,74 @@
+.productDetail_header_box{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+
+}
+.productDetail_header{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.productDetail_list_header{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 13px;
+    font-weight: 600;
+   
+}
+.productDetail_list_header li a{
+    text-decoration: none;
+    color: #666;
+}
+.productDetail_header_right{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.productDetail_header_right p{
+    font-size: 13px;
+}
+.productDetail_header_right p span{
+    font-weight: 600;
+}
+.productDetail_header_right input{
+    width: 70px;
+    height: 50px;
+    border-radius: 6px;
+    background:  #F5F7FF;
+    outline: none;
+    text-align: center;
+    border: none;
+}
+.addToCard_button_product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #0156FF;
+    width: 150px;
+    height: 50px;
+    font-size: 13px;
+    color: #fff;
+    border-radius: 3rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.paypal_product_payment{
+    width: 140px;
+    height: 50px;
+    border-radius: 50px;
+    background: #FFB800;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #fff;
+}

@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Login</title>
     <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/contactUs.css">
+    <link rel="stylesheet" href="../styles/Login.css">
 </head>
 <body>
     <div class="contactUs_container">
@@ -20,7 +20,7 @@
             </div>
             <div class="topNavMiddle">
                 <p>Visit our showroom in 1234 Street Address City Address, 1234</p>
-                <a href="#">Contact Us</a>
+                <a href="./contactUs.html">Contact Us</a>
             </div>
             <div class="topNavRight">
                 <p>Call Us: (00)1233 4567</p>
@@ -56,91 +56,57 @@
         </div>
         <hr/>
 
-        <div class="contactUs_content">
-            <div class="contactUs_innerContent">
-            <div class="contactUs_left_content">
-                <div class="contactUs_header">
+        <div class="login_content">
+            <div class="login_innerContent">
+                <div class="login_heading_info">
+                    <div class="login_header">
 
               
-               <div class="contactUs_navigation">
-                <p>Home</p>
-                <span>&gt;</span>
-                <p>
-                Contact Us
-                </p>
-               </div>
-               <h2 class="contactUs_headingText">Contact Us</h2>
-               <div class="contactUs_text">
+                        <div class="login_navigation">
+                         <p>Home</p>
+                         <span>&gt;</span>
+                         <p>
+                         Login
+                         </p>
+                        </div>
+                        <h2 class="login_headingText">Customer Login</h2>
+                     
+                     </div>
+                </div>
+                <div class="login_box_wrapper">
 
-                   <p>We love hearing from you, our Shop customers.</p>
-                   <p>Please contact us and we will make sure to get back to you as soon as we possibly can.</p>
+                    <div class="login_left_content">
+                        <h2>Registered Customers</h2>
+                        <p>If you have an account, sign in with your email address.</p>
+                        <form class="login_form">
+                      
+                        <div class="login_wrapper">
+                            <label>Email <span>*</span></label>
+                            <input type="text" placeholder="Enter email"/>
+                        </div>
+                        <div class="login_wrapper">
+                            <label>Password <span>*</span></label>
+                            <input type="password" placeholder="Enter password"/>
+                        </div>
+                        <div class="login_btn_wrapper">
+                            <button class="login_btn">Sign In</button>
+                            <a href="#">Forgot your password?</a>
+                        </div>
+                    </form>
+                    </div>
+                    <div class="login_right_content">
+                        <h2>New Customer?</h2>
+                        <p>Creating an account has many benefits: </p>
+                        <ul class="newCustomer_benefits">
+                            <li>Check out faster</li>
+                            <li>Keep more than one address</li>
+                            <li>Track orders and more</li>
+                        </ul>
+                        <a href="#" class="create_acc_link">Create An Account</a>
+                    </div>
                 </div>
             </div>
-            <form class="contactUs_form">
-                <div class="contactUs_userDetail">
-                    <div class="contactUs_userInfo">
-                        <label for="name">Your username <span>*</span></label>
-                        <input required type="text" placeholder="Your username"/>
-                    </div>
-                    <div class="contactUs_userInfo">
-                        <label for="name">Your Email <span>*</span></label>
-                        <input required type="text" placeholder="Your Email"/>
-                    </div>
-                </div>
-                <div class="contactUs_userInfo" id="contactUs_phone">
-                    <label>Your Phone Number</label>
-                    <input type="text" placeholder="Your Phone"/>
-                </div>
-                <div class="contactUs_textArea_wrapper">
-                    <label>What's on your mind? <span>*</span></label>
-                    <textarea required name="" id="" cols="30" rows="10" placeholder="Jot us a note and we’ll get back to you as quickly as possible"></textarea>
-                </div>
-                <button type="submit" class="contactUs_submitBtn">Submit</button>
-            </form>
-            </div>
-            <div class="contactUs_right_content">
-                <div class="contactUs_detail_box">
-                    <div class="contactUs_detail">
-                        <div class="contactUs_detail_left">
-                            <img src="../icons/location.png" alt="address">
-                        </div>
-                        <div class="contactUs_detail_right">
-                            <h2>Address:</h2>
-                            <p>1234 Street Adress City Address, 1234</p>
-                        </div>
-                    </div>
-                    <div class="contactUs_detail">
-                        <div class="contactUs_detail_left">
-                            <img src="../icons/phoneIcon.png" alt="phone">
-                        </div>
-                        <div class="contactUs_detail_right">
-                            <h2>Phone:</h2>
-                            <p>(00)1234 5678</p>
-                        </div>
-                    </div>
-                    <div class="contactUs_detail">
-                        <div class="contactUs_detail_left">
-                            <img src="../icons/timeIcon.png" alt="time">
-                        </div>
-                        <div class="contactUs_detail_right">
-                            <h2>We are open:</h2>
-                            <p>Monday - Thursday: 9:00 AM - 5:30 PM</p>
-                            <p>Friday 9:00 AM - 6:00 PM Saturday: 11:00 AM - 5:00 PM</p>
-                        </div>
-                    </div>
-                    <div class="contactUs_detail">
-                        <div class="contactUs_detail_left">
-                            <img src="../icons/mail_icon.png" alt="mail">
-                        </div>
-                        <div class="contactUs_detail_right">
-                            <h2>E-mail:</h2>
-                            <p class="contactUs_mail">shop@gmail.com</p>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
+             
         </div>
 
         <div class="supportSection">
