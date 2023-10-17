@@ -1,0 +1,55 @@
+.contactUs_content{
+    display: flex;
+    min-height: 70vh;
+    gap: 2rem;
+
+}
+.contactUs_left_content{
+    flex: 7.5;
+    background-color: aqua;
+}
+.contactUs_right_content{
+    flex: 4.5;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+}
+.contactUs_detail_box{
+    padding: 3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #F5F7FF;
+    width: fit-content;
+
+}
+.contactUs_detail{
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+
+}
+.contactUs_detail_left{
+    /* background-color: red; */
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.contactUs_detail_left img{
+    width: 35px;
+    height: 35px;
+
+}
+.contactUs_detail_right{
+    /* background-color: blue; */
+   
+}
+.contactUs_detail_right h2{
+    font-size: 18px;
+    font-weight: 600;
+}
+.contactUs_detail_right p{
+    font-size: 13px;
+}
