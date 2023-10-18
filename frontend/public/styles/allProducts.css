@@ -11,6 +11,7 @@
 .allProducts_card_filter_wrapper{
     display: flex;
     gap: 8px;
+    align-items: flex-start;
 }
 .allProducts_filter_brand_wrapper{
     flex: 3;
@@ -20,7 +21,7 @@
     min-width: 130px;
     padding: 10px;
 }
-.allProducts_filter_wrapper{
+.allProducts_filter_brand_box{
     display: flex;
     background-color: #F5F7FF;
     flex-direction: column;
@@ -87,3 +88,15 @@
     grid-auto-rows: minmax(230px, auto); 
     row-gap: 1.5rem;
 }
+
+.allProducts_brand_img_wrapper{
+    display: flex;
+}
+
+#brand_heading{
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
