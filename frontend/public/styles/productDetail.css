@@ -72,3 +72,142 @@
     gap: 8px;
     color: #fff;
 }
+.productDetail_wrapper{
+    display: flex;
+
+}
+.left_productDetail_wrapper{
+    flex: 1;
+    background-color: #F5F7FF;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+.left_productDetail_innerWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    width: 50%;
+    margin: auto;
+}
+
+
+.productDetail_navigation{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 12px;
+}
+.productDetail_navigation span{
+    color: #0156FF;
+}
+.navigationToSeriesPara{
+    color: #A2A6B0;
+}
+.product-name{
+    font-size: 29px;
+    font-weight: 500;
+}
+.review_req_para{
+    color: #0156FF;
+    font-size: 11px;
+}
+.productDetail_spec_list{
+    padding-left: 10px;
+}
+.productDetail_spec_list li{
+    list-style-type: disc;
+    font-size: 13px;
+
+}
+.product-detail-info{
+    font-size: 16px;
+    font-weight: 300;
+    text-align: justify;
+}
+.anyQuery_wrapper p{
+    font-size: 12px;
+    font-weight: 600;
+}
+.anyQuery_wrapper a{
+    font-weight: 300;
+    color: #0156FF;
+
+}
+.product_moreInformation{
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.right_productDetail_wrapper{
+    flex: 1;
+}
+.productDetail_product_imgWrapper{
+    display: flex;
+
+    padding: 1rem;
+}
+.productDetail_product_imgWrapper_btns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.productDetail_banner_wrapper{
+   
+    height: 38vh;
+    /* background: linear-gradient(90deg, #010101 0%, #0E0F10 68.23%, rgba(20, 21, 23, 0.00) 100%); */
+    background-color: rgba(0, 0, 0, 0.89);
+    
+}
+.productDetail_banner_innerWrapper{
+    display:flex;
+    align-items: center;
+    height: 100%;
+    width: 70%;
+    margin: auto;
+}
+.left_productDetail_banner_content{
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+    flex: 1;
+
+}
+.productDetail_banner_desc{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    color: #fff;
+}
+.productDetail_banner_desc h2{
+    font-size: 33px;
+    font-weight: 500;
+}
+.productDetail_banner_desc p{
+    font-size: 13px;
+}
+.right_productDetail_banner_content{
+    height: 100%;
+    
+    flex: 1;
+}
+.right_productDetail_banner_content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.prodouctDetail_feature_banner{
+
+    height: 450px;
+    width: 100%;
+}
+.prodouctDetail_feature_banner img{
+    height: 100%;
+    width: 100%;
+}
