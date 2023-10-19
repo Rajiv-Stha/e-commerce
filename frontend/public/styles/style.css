@@ -90,14 +90,28 @@
   align-items: center;
   gap: 2rem;
 }
+#logo_img{
+  width: 25px;
+}
 .navList {
   display: flex;
   gap: 1rem;
 }
+
+
 .navList li a {
   text-decoration: none;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
+  
+}
+.navList li a:hover{
+  background: #0156FF;
+  padding: 0.9rem 12px;
+  border-radius: 2rem;
+  color: #fff;
+  transition: 0.2s ease-in-out;
+  
 }
 .navbarRight {
   display: flex;
@@ -154,6 +168,7 @@
 .newProducts_card:hover {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   transform: scale(0.9); /* transformation on hover */
+  
 }
 
 .newProducts_stockInfo_para {
@@ -269,6 +284,30 @@
 .customeBuild_banner a {
   font-size: 12px;
 }
+/* sponcers section  */
+.sponcers_wrapper{
+  width: 100%;
+}
+.sponcers_innerWrapper{
+  width: 80%;
+  margin: auto;
+}
+.sponcers_img_wrapper{
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  gap: 1.5rem;
+}
+.sponcers_img_wrapper img{
+  /* width: 200px; */
+  flex: 1;
+  object-fit: contain;
+  height: 65px;
+
+}
+
 
 /* support section  */
 .supportSection {
@@ -340,10 +379,10 @@
 }
 .footer_subscribe_box_left h1 {
   font-weight: 500;
-  font-size: 36px;
+  font-size: 34px;
 }
 .footer_subscribe_box_left p {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 300;
 }
 .footer_subscribe_box_right {
@@ -353,19 +392,19 @@
 }
 .footer_subscribe_box_right input {
   width: 390px;
-  height: 50px;
+  height: 45px;
   padding: 0 12px;
   border-radius: 4px;
   border: 2px solid #fff;
 
   background: #000;
-  font-size: 12px;
+  font-size: 11px;
   color: #fff;
 }
 .footer_subscribe_btn {
-  height: 50px;
-  font-size: 13px;
-  width: 150px;
+  height: 45px;
+  font-size: 11px;
+  width: 140px;
   border: none;
   outline: none;
   border-radius: 50px;
@@ -386,11 +425,11 @@
 .footer_item p {
   color: rgba(255, 255, 255, 0.5);
   font-weight: 700;
-  font-size: 13px;
+  font-size: 11px;
 }
 .footer_item_lists {
   color: #fff;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 400;
 }
 .footer_item_lists li a {
@@ -415,5 +454,5 @@
 .footer_copywrite_section_item p {
   color: #fff;
   opacity: 0.6;
-  font-size: 12px;
+  font-size: 11px;
 }
