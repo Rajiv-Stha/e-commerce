@@ -17,3 +17,121 @@
 .shopping_cart_navigation span{
     color: #0156FF;
 }
+.shoppingCart_card_summary_wrapper{
+    display: flex;
+}
+.shoppingCart_card_wrapper{
+    flex: 9;
+    background-color: rgb(255, 183, 183);
+}
+.shoppingCart_summary_wrapper{
+    padding: 1rem;
+    flex: 3;
+    background-color: #F5F7FF;
+}
+.summaryCart_summary_box{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.cart_summary_heading{
+    font-size: 17px;
+    font-weight: 600;
+}
+#summaryCart_para1{
+    font-size: 16px;
+}
+#summaryCart_para2{
+    font-size: 12px;
+    color: #666;
+}
+.summaryCart_dis_code_box p{
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.disCount_input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #CACDD8;
+    background-color: transparent;
+    outline: none;
+    padding: 2px;
+    font-size: 12px;
+}
+.shoppingCart_price_info_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+.shoppingCart_priceInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 600;
+}
+#shipping_info{
+    font-size: 9px;
+    color: #A2A6B0;
+}
+#shoppingOrder_total_cost{
+    font-size: 15px;
+}
+.shoppingCart_btn_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.shoppingCart_btn_wrapper button{
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+#proceed_to_checkout_btn{
+    background-color: #0156FF;
+    color: #fff;
+}
+#checkOut_with_paypal_btn{
+ background-color: #FFB800;
+ color: #232C65; 
+}
+.shoppingCart_summary_banner{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.shoppingCart_summary_banner img{
+    width: 31px;
+}
+.shoppingCart_summary_banner span{
+    color: #00AEB8;
+}
+.shoppingCart_summary_banner p{
+    font-size: 9px;
+    color: #272560;
+}
+#shoppingCart_table{
+    text-align: left;
+}
+#shoppingCart_table tbody td img{
+    height: 90px;
+    width: 120px;
+    object-fit: contain;
+}
+.shoppingCart_table_imgWrapper{
+    width: 65%;
+}
+#shoppingCart_table tbody td{
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
+    align-items: center;
+}
