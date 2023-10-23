@@ -1,0 +1,29 @@
+.termsAndCondition_content{
+    padding: 1rem 0;
+
+}
+.termsAndCondition_innerContent{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.termsAndContion_navigation{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+
+}
+
+
+#termsAndCondition_header{
+
+    font-size: 25px;
+    font-weight: 600;
+}
+#general_terms_header{
+    font-weight: 600;
+    font-size: 18;
+}
