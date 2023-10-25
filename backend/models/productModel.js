@@ -15,11 +15,13 @@ const productSchema = mongoose.Schema(
       ref: "user",
       required: true,
     },
+    colors:Array,
+    image: [],
+    specs:Array,
     price: {
       type: Number,
       required: true,
     },
-    image: [],
     quantity: {
       type: Number,
       required: true,
@@ -28,7 +30,6 @@ const productSchema = mongoose.Schema(
       type: String,
       required: true,
     },
-    
   },
   { timestamps: true }
 );
