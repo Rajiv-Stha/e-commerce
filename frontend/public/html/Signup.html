@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>signup</title>
     <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/Login.css">
+    <link rel="stylesheet" href="../styles/signUp.css">
 </head>
 <body>
-    <div class="login_container">
+    <div class="signup_container">
         <div id="topNav">
             <div class="topNavContent">
             <div class="topNavLeft">
@@ -58,57 +58,59 @@
         </div>
         <hr/>
 
-        <div class="login_content">
-            <div class="login_innerContent">
-                <div class="login_heading_info">
-                    <div class="login_header">
+        <div class="signUp_content">
+            <div class="signUp_innerContent">
+                <div class="signUp_heading_info">
+                    <div class="signUp_header">
 
               
-                        <div class="login_navigation">
+                        <div class="SignUp_navigation">
                          <p>Home</p>
                          <span>&gt;</span>
                          <p>
-                         Login
+                         Sign up
                          </p>
                         </div>
-                        <h2 class="login_headingText">Customer Login</h2>
+                        <h2 class="SignUp_headingText">Customer SignUp</h2>
                      
                      </div>
                 </div>
-                <div class="login_box_wrapper">
+                <div class="singup_box">
 
-                    <div class="login_left_content">
-                        <h2>Registered Customers</h2>
-                        <p>If you have an account, sign in with your email address.</p>
-                        <form class="login_form">
-                      
-                        <div class="login_wrapper">
+                    <form class="signup_form" id="signupForm">
+                        <h2>Register account</h2>
+                        <div class="signup_wrapper">
+                            <label>Username <span>*</span></label>
+                            <input required type="text" placeholder="Enter Username"/>
+                        </div>
+                        <div class="signup_wrapper">
                             <label>Email <span>*</span></label>
                             <input required type="text" placeholder="Enter email"/>
                         </div>
-                        <div class="login_wrapper">
-                            <label>Password <span>*</span></label>
-                            <input required type="password" placeholder="Enter password"/>
+                        <div class="signup_wrapper">
+                            <label>Country</label>
+                    
+                            <select id="signup_select" class="signin_select">
+                                <option value="choose">select country</option>
+                                <option value="nepal">Nepal</option>
+                            </select>
                         </div>
-                        <div class="login_btn_wrapper">
-                            <button class="login_btn">Sign In</button>
-                            <a href="#">Forgot your password?</a>
+                        <div class="signup_password_wrapper">
+                            <div class="signup_wrapper">
+                                <label>Password <span>*</span></label>
+                                <input required type="password" placeholder="Enter password"/>
+                            </div>
+                            <div class="signup_wrapper">
+                                <label>Confirm password <span>*</span></label>
+                                <input required type="password" placeholder="Confirm password"/>
+                            </div>
+                        </div>
+                        <div class="signup_btn_wrapper">
+                            <button type="submit" class="signup_btn">Sign Up</button>
                         </div>
                     </form>
-                    </div>
-                    <div class="login_right_content">
-                        <h2>New Customer?</h2>
-                        <p>Creating an account has many benefits: </p>
-                        <ul class="newCustomer_benefits">
-                            <li>Check out faster</li>
-                            <li>Keep more than one address</li>
-                            <li>Track orders and more</li>
-                        </ul>
-                        <a href="#" class="create_acc_link">Create An Account</a>
-                    </div>
                 </div>
             </div>
-             
         </div>
 
         <div class="supportSection">
