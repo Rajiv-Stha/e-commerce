@@ -20,7 +20,7 @@ const handleSignup = async (e) => {
     
     try {
       if (signupPayload.password !== signupPayload.confirmPassword) {
-        alert("password doesn't match");
+        showToast("error","password doesn't match");
         return;
       }
       const { data, status } = await axios.post(
@@ -46,7 +46,7 @@ const handleSignup = async (e) => {
         showToast("success", "successfully registered");
       }
     } catch (error) {
-      alert(error.message)
+      showToast("error",error.message)
       console.log(error);
     }
   };
