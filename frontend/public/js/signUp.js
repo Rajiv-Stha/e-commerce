@@ -2,9 +2,10 @@
 
 const handleSignup = async (e) => {
     e.preventDefault();
+    alert("subminting")
     console.log("inside form");
     const username = document.querySelector("#signup_username");
-  
+    
     const email = document.querySelector("#signup_email");
     const country = document.querySelector("#signup_select");
     const password = document.querySelector("#signup_password");
@@ -16,22 +17,27 @@ const handleSignup = async (e) => {
       password: password.value,
       confirmPassword: confirmPassword.value,
     };
-  
+    
     try {
       if (signupPayload.password !== signupPayload.confirmPassword) {
-        // alert("password doesn't match");
+        alert("password doesn't match");
         return;
       }
       const { data, status } = await axios.post(
-        "https://shophub.onrender.com/api/auth/register",
+        "http://localhost:8000/api/auth/register",
         signupPayload
       );
-  
+
       username.value = "";
       email.value = "";
       country.value = "";
       password.value = "";
       confirmPassword.value = "";
+
+
+
+
+
       if (status === 200) {
         setTimeout(() => {
           window.location.href =
@@ -40,6 +46,7 @@ const handleSignup = async (e) => {
         showToast("success", "successfully registered");
       }
     } catch (error) {
+      alert(error.message)
       console.log(error);
     }
   };

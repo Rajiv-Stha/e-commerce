@@ -10,12 +10,6 @@ const productSchema = mongoose.Schema(
       type: String,
       required: true,
     },
-    owner: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "user",
-      required: true,
-    },
-    colors:Array,
     image: [],
     specs:Array,
     price: {

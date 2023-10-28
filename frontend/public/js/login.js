@@ -1,5 +1,3 @@
-
-
 const handleLogin = async (e) => {
     e.preventDefault();
   
@@ -11,10 +9,11 @@ const handleLogin = async (e) => {
       email: email.value,
       password: password.value,
     };
+
     try {
       
       const { status, data } = await axios.post(
-        "https://shophub.onrender.com/api/auth/login",
+        "http://localhost:8000/api/auth/login",
         emailPayload
       );
       email.value = "";
@@ -24,7 +23,7 @@ const handleLogin = async (e) => {
         // await showToast("success", "logged in successfully");
         localStorage.setItem("first", JSON.stringify(true));
   
-        window.location.href = "http://127.0.0.1:5500/frontend/index.html";
+        // window.location.href = "http://127.0.0.1:5500/frontend/index.html";
       }
     } catch (error) {
       console.log(error);
