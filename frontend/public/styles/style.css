@@ -163,7 +163,7 @@ hr{
   display: flex;
   flex-direction: column;
   width: 220px;
-
+  text-decoration: none !important;
   justify-content: center;
   padding: 1rem;
   gap: 10px;
@@ -180,7 +180,6 @@ hr{
   color: #78a962;
 }
 .newProducts_imgWrapper {
-  background-color: red;
   display: flex;
   align-items: center;
   justify-content: center;

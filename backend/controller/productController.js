@@ -36,9 +36,9 @@ const getProduct = async (req, res, next) => {
   let products;
   try {
     if (category || _id) {
-      products = await productModel.find({ ...req.query }).populate("owner");
+      products = await productModel.find({ ...req.query })
     } else {
-      products = await productModel.find({}).populate("owner");
+      products = await productModel.find({})
     }
     return res.status(200).json({ message: products, success: true });
   } catch (error) {
