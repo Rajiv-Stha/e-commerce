@@ -10,6 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.0/axios.min.js"
         integrity="sha512-WrdC3CE9vf1nBf58JHepuWT4x24uTacky9fuzw2g/3L9JkihgwZ6Cfv+JGTtNyosOhEmttMtEZ6H3qJWfI7gIQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script dafer src="../js/methods.js"></script>
     <script defer src="../js/productDetail.js"></script>
 
 </head>
@@ -67,8 +68,8 @@
             <div class="productDetail_header">
                 <div class="productDetail_header_left">
                     <ul class="productDetail_list_header">
-                        <li><a href="#">About Product</a></li>
-                        <li><a href="#">Details</a></li>
+                        <li><a href="#" class="details_tab activeDetailsTab"  id="about">About Product</a></li>
+                        <li><a href="#" class="details_tab" id="details">Details</a></li>
                     </ul>
                 </div>
                 <div class="productDetail_header_right">
@@ -92,7 +93,15 @@
                     <h2 class="product-name"></h2>
                     <p class="review_req_para">Be the first to review this product</p>
                     <!-- detail and about which neeeds to change on click  -->
-                    <!-- <p class="product-detail-info">MSI MPG Trident 3 10SC-005AU Intel i7 10700F, 2060 SUPER, 16GB RAM, 512GB SSD, 2TB HDD, Windows 10 Home, Gaming Keyboard and Mouse 3 Years Warranty Gaming Desktop</p> -->
+
+
+
+                    <!-- about productss  show this first  -->
+                    <p class="product-detail-info"></p>
+
+
+
+                    <!-- specs /// details  -->
                     <ul class="productDetail_spec_list">
                 
                     </ul>

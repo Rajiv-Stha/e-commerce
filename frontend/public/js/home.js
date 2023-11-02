@@ -5,10 +5,13 @@ const fetchAllProducts =async()=>{
       
             data.message.forEach(product=>{
 
-                let productCardHtml =  `
-                
-                <a href='http://localhost:5500/frontend/public/html/productDetail.html?productId=${product._id}' class="newProducts_card">
-                
+
+                const productCardHtml = document.createElement("a");
+                productCardHtml.href = `http://localhost:5500/frontend/public/html/productDetail.html?productId=${product._id}`
+                productCardHtml.classList.add("newProducts_card");
+
+
+                productCardHtml.innerHTML = `
                 <p class="newProducts_stockInfo_para">✅ in stock</p>
                 <div class="newProducts_imgWrapper">
                 <img class="newProducts_Img" src=${product.image[0]}>
@@ -24,23 +27,22 @@ const fetchAllProducts =async()=>{
                 <div class="newProduct_priceBox">
                 <h2 class="newProduct_price">$${product.price}</h2>
                 </div>
-               
-                </a>
-                
                 `
-                document.querySelector(".homeAllProducts").innerHTML += productCardHtml;
-                
-                            const addToCartButton = document.createElement("button");
-                            addToCartButton.className = "addToCart_btn";
-                            addToCartButton.innerHTML = `
-                                <img src="./public/icons/cartIconBLue.png" alt="cart">
-                                <p>Add to Cart</p>
-                            `;
-                            addToCartButton.addEventListener("click", () => handleAddToCart(product));
-                            
-                            // Append the button to the product card
-                            const productCard = document.querySelector(".newProducts_card");
-                            productCard.appendChild(addToCartButton);
+                const addToCartButton = document.createElement("button");
+                addToCartButton.className = "addToCart_btn";
+                addToCartButton.innerHTML = `
+                    <img src="./public/icons/cartIconBLue.png" alt="cart">
+                    <p>Add to Cart</p>
+                `;
+
+                addToCartButton.addEventListener("click", () => handleAddToCart(product));
+                productCardHtml.append(addToCartButton)
+
+               
+
+
+
+                document.querySelector(".homeAllProducts").appendChild(productCardHtml);
 
             })
 
