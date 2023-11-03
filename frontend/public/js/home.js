@@ -1,14 +1,16 @@
 const fetchAllProducts =async()=>{
     try {
-       const {data,status} = await axios.get("http://localhost:8000/api/product");  
+       const {data} = await axios.get("http://localhost:8000/api/product");  
 
       
             data.message.forEach(product=>{
 
 
-                const productCardHtml = document.createElement("a");
-                productCardHtml.href = `http://localhost:5500/frontend/public/html/productDetail.html?productId=${product._id}`
+                const productCardHtml = document.createElement("div");
                 productCardHtml.classList.add("newProducts_card");
+                productCardHtml.addEventListener("click",()=>{
+                    location.href=  `http://localhost:5500/frontend/public/html/productDetail.html?productId=${product._id}`
+                })
 
 
                 productCardHtml.innerHTML = `
@@ -35,7 +37,7 @@ const fetchAllProducts =async()=>{
                     <p>Add to Cart</p>
                 `;
 
-                addToCartButton.addEventListener("click", () => handleAddToCart(product));
+                addToCartButton.addEventListener("click",(e)=>handleAddToCart(e,product))
                 productCardHtml.append(addToCartButton)
 
                
@@ -51,20 +53,14 @@ const fetchAllProducts =async()=>{
 
 
 
-            addEventToAddToCart()
 
     } catch (error) {
             console.log(error)
     }
 }
 fetchAllProducts()
-const handleAddToCart=() =>{
-
-}
-const addEventToAddToCart=()=>{
-
-    document.querySelectorAll(".addToCart_btn").forEach(btn=>{
-        btn.addEventListener("click",handleAddToCart)
-    })
-
-}
+const handleAddToCart=(event,product) =>{
+    event.stopPropagation()
+    let cartData = {...product,cartQuantity:1}
+    addToCart(cartData);
+    }

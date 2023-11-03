@@ -4,11 +4,11 @@
         cart = JSON.parse(cart)
     }
     return cart ?? []
-
 }
+
+
  const addToCart=(newCart)=>{
     let prev = getCartItems()
     const  allCarts = [...prev,newCart]
     localStorage.setItem("cart",JSON.stringify(allCarts))
-
 }

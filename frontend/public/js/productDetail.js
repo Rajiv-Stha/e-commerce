@@ -6,7 +6,7 @@ let productData = {};
 
 const getProductById = async () => {
   try {
-    const { status, data } = await axios.get(
+    const {  data } = await axios.get(
       `http://localhost:8000/api/product?_id=${productId}`
     );
     productData= data.message[0]
@@ -54,7 +54,10 @@ const handleDetailsTab=()=>{
 }
 
 const handleAddToCart=()=>{
-  addToCart(productData);
+  const cartQuantity = document.querySelector(".addToCartQuantityInput").value
+  alert(cartQuantity)
+  const cartDatat = {...productData,cartQuantity:Number(cartQuantity)}
+  addToCart(cartDatat);
 }
 const handleEventHandlerToDetailsTab=()=>{
   document.querySelectorAll(".details_tab").forEach(tab=>{
@@ -76,6 +79,7 @@ const handleDetailsTabChange=(e)=>{
 
   
 }
+
 
 handleEventHandlerToAddToCartButton()
 handleEventHandlerToDetailsTab()
