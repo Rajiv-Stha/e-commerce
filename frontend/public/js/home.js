@@ -9,7 +9,7 @@ const fetchAllProducts =async()=>{
                 const productCardHtml = document.createElement("div");
                 productCardHtml.classList.add("newProducts_card");
                 productCardHtml.addEventListener("click",()=>{
-                    location.href=  `https://miralimammad.netlify.app/frontend/public/html/productDetail.html?productId=${product._id}`
+                    location.href=  `https://miralimammad.netlify.app/public/html/productDetail.html?productId=${product._id}`
                 })
 
 

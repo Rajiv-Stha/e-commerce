@@ -41,7 +41,7 @@ const handleSignup = async (e) => {
       if (status === 200) {
         setTimeout(() => {
           window.location.href =
-            "https://miralimammad.netlify.app/frontend/public/html/login.html";
+            "https://miralimammad.netlify.app/public/html/login.html";
         }, 2000);
         showToast("success", "successfully registered");
       }
