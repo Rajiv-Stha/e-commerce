@@ -24,7 +24,7 @@ const handleLogin = async (e) => {
 
         setTimeout(() => {
           
-          window.location.href = "http://127.0.0.1:5500/frontend/index.html";
+          window.location.href = "https://miralimammad.netlify.app/frontend/index.html";
         }, 2000);
          showToast("success", "logged in successfully");
       }
