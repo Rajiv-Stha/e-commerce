@@ -7,7 +7,7 @@ let productData = {};
 const getProductById = async () => {
   try {
     const {  data } = await axios.get(
-      `http://localhost:8000/api/product?_id=${productId}`
+      `https://ecommerce-dxp5.onrender.com/api/product?_id=${productId}`
     );
     productData= data.message[0]
     console.log(productData)

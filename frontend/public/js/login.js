@@ -13,7 +13,7 @@ const handleLogin = async (e) => {
     try {
       
       const { status, data } = await axios.post(
-        "http://localhost:8000/api/auth/login",
+        "https://ecommerce-dxp5.onrender.com/api/auth/login",
         emailPayload
       );
       email.value = "";

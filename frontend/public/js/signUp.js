@@ -24,7 +24,7 @@ const handleSignup = async (e) => {
         return;
       }
       const { data, status } = await axios.post(
-        "http://localhost:8000/api/auth/register",
+        "https://ecommerce-dxp5.onrender.com/api/auth/register",
         signupPayload
       );
 
