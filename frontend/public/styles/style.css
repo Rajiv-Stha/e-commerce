@@ -123,10 +123,29 @@ hr{
   align-items: center;
   gap: 2rem;
 }
+.cartBox{
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.cartCount{
+  font-size: 12px;
+}
 .userImg {
   width: 36px;
   height: 36px;
   border-radius: 50%;
+}
+.navbar_loginBtn{
+  background: #0156FF;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 11px;
+  cursor: pointer;
+  outline: none;
+
 }
 
 /* heroSection stylying  */
