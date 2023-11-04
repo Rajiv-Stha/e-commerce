@@ -32,10 +32,9 @@ const reduceQuantityOfProduct = async (req, res, next) => {
 };
 
 const getProduct = async (req, res, next) => {
-  const { category, _id } = req.query;
   let products;
   try {
-    if (category || _id) {
+    if (Object.entries(req.query).length >0) {
       products = await productModel.find({ ...req.query })
     } else {
       products = await productModel.find({})
