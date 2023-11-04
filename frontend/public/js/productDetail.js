@@ -4,6 +4,24 @@ let currenTab = "about"
 let userQuantity = 1;
 let productData = {};
 
+
+document.querySelector(".addToCartQuantityInput").addEventListener("change",(e)=>{
+
+  const quantity = +e.target.value
+  if(quantity > Number(productData?.quantity)){
+    document.querySelector(".addToCartQuantityInput").value= userQuantity;
+    alert("out of stock")
+  }else if(quantity <1){
+       document.querySelector(".addToCartQuantityInput").value= userQuantity;
+   
+  }else{
+    userQuantity = quantity;
+    document.querySelector(".addToCartQuantityInput").value = quantity;
+  }
+
+})
+
+
 const getProductById = async () => {
   try {
     const {  data } = await axios.get(
@@ -53,15 +71,16 @@ const handleDetailsTab=()=>{
   }
 }
 
+
+
 const handleAddToCart=()=>{
   const cartQuantity = document.querySelector(".addToCartQuantityInput").value
-  alert(cartQuantity)
+  
   const cartDatat = {...productData,cartQuantity:Number(cartQuantity)}
   addToCart(cartDatat);
 }
 const handleEventHandlerToDetailsTab=()=>{
   document.querySelectorAll(".details_tab").forEach(tab=>{
-    console.log("hey")
     tab.addEventListener("click",handleDetailsTabChange)
   })
 }

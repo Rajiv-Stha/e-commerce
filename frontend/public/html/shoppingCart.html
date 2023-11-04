@@ -6,7 +6,11 @@
     <title>shopping Cart</title>
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/shoppingCart.css">
+    <script defer src="../js/methods.js"></script>
+    <script defer src="../js/cart.js"></script>
 </head>
+
+
 <body>
     <div class="shoppingCart_container">
         <div id="topNav">
@@ -82,48 +86,7 @@
                                 </tr>
                             </thead>
                             <tbody class="shoppingCartProductList">
-                                <tr>
-                                    <td >
-                                    <div class="shoppingCart_item_name_box">
-                                        <div class="shoppingCart_item_img_box">
-
-                                            <img  src="../images/cpuBanner.png" alt="item">
-                                        </div>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, quibusdam.</p>
-                                    </div>
-                                    </td>
-                                    <td>$5400</td>
-                                    <td><input type="number" placeholder="1"/></td>
-                                    <td>$3243</td>
-                                </tr>
-                                <tr>
-                                    <td >
-                                    <div class="shoppingCart_item_name_box">
-                                        <div class="shoppingCart_item_img_box">
-
-                                            <img  src="../images/cpuBanner3.png" alt="item">
-                                        </div>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, quibusdam.</p>
-                                    </div>
-                                    </td>
-                                    <td>$5400</td>
-                                    <td><input type="number" placeholder="1"/></td>
-                                    <td>$3243</td>
-                                </tr>
-                                <tr>
-                                    <td >
-                                    <div class="shoppingCart_item_name_box">
-                                        <div class="shoppingCart_item_img_box">
-
-                                            <img  src="../images/intel_i7_banner.png" alt="item">
-                                        </div>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, quibusdam Lorem ipsum dolor sit amet..</p>
-                                    </div>
-                                    </td>
-                                    <td>$5400</td>
-                                    <td><input type="number" placeholder="1"/></td>
-                                    <td>$3243</td>
-                                </tr>
+                               
                               
                          
                             </tbody>
@@ -146,13 +109,13 @@
                             <div class="shoppingCart_price_info_wrapper">
                                 <div class="shoppingCart_priceInfo">
                                     <p>Subtotal</p>
-                                    <p>$130000</p>
+                                    <p class="summarySubTotalAmount">$</p>
                                 </div>
                                 <div class="shoppingCart_priceInfo">
                                     <p>Shipping</p>
-                                    <p>$40</p>
+                                    <p>$10</p>
                                 </div>
-                                <p id="shipping_info">(Standard Rate - Price may vary depending on the item/destination. TECS Staff will contact you.)</p>
+                                <!-- <p id="shipping_info">(Standard Rate - Price may vary depending on the item/destination. TECS Staff will contact you.)</p>
                                 <div class="shoppingCart_priceInfo">
                                     <p>Tax</p>
                                     <p>$13</p>
@@ -160,10 +123,10 @@
                                 <div class="shoppingCart_priceInfo">
                                     <p>GST (10%)</p>
                                     <p>$13</p>
-                                </div>
+                                </div> -->
                                 <div class="shoppingCart_priceInfo">
                                     <p>Order Total</p>
-                                    <p id="shoppingOrder_total_cost">$213</p>
+                                    <p id="shoppingOrder_total_cost">$</p>
                                 </div>
                             </div>
                             <div class="shoppingCart_btn_wrapper">
@@ -221,8 +184,6 @@
         <footer class="footer">
             <div class="footerInnerContent">
             <div class="footer_content">
-
-        
             <div class="footer_subscribe_box">
                 <div class="footer_subscribe_box_left">
                     <h1>Sign In To Our Newsletter.</h1>

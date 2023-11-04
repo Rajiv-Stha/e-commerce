@@ -12,7 +12,6 @@ const fetchAllProducts =async()=>{
                     location.href=  `https://miralimammad.netlify.app/public/html/productDetail.html?productId=${product._id}`
                 })
 
-
                 productCardHtml.innerHTML = `
                 <p class="newProducts_stockInfo_para">✅ in stock</p>
                 <div class="newProducts_imgWrapper">
@@ -58,9 +57,13 @@ const fetchAllProducts =async()=>{
             console.log(error)
     }
 }
+
+
 fetchAllProducts()
+
+
 const handleAddToCart=(event,product) =>{
     event.stopPropagation()
     let cartData = {...product,cartQuantity:1}
     addToCart(cartData);
-    }
+}
