@@ -2,7 +2,7 @@ import { getTime, getTimeCountDown } from "../../../utils/services"
 import moment from "moment"
 
 const DebateRoomHeader = ({debateState,isLive,activeDebateRef ,speakTimeLeft,remainingTime}) => {
-
+s
   return (
     <div>
         <div className="speak_time_debate_state">
