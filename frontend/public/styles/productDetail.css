@@ -107,7 +107,7 @@
     color: #A2A6B0;
 }
 .product-name{
-    font-size: 29px;
+    font-size: 25px !important;
     font-weight: 500;
 }
 .review_req_para{
@@ -123,7 +123,7 @@
 
 }
 .product-detail-info{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
     text-align: justify;
 }
