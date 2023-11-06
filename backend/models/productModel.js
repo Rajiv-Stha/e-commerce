@@ -23,9 +23,6 @@ const productSchema = mongoose.Schema(
     category: {
       type: String,
       required: true,
-    },
-    subCategory:{
-      type:String,
     }
   },
   { timestamps: true }

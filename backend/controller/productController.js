@@ -131,6 +131,31 @@ const getAppStats=async(req,res,next)=>{
   }
 }
 
+
+const getCategory=async(req,res,next)=>{
+    try {
+      const categories = await productModel.distinct("category");
+      res.status(200).json({message:categories,success:true});
+    } catch (error) {
+      next(error)
+    }
+
+}
+
+
+
+const findProducts=(req,res,next)=>{
+
+  try {
+    
+    return res.json({message:"okey"})
+  } catch (error) {
+
+    next(error)
+    
+  }
+}
+
 module.exports = {
   getProduct,
   createProduct,
@@ -138,5 +163,7 @@ module.exports = {
   updateProduct,
   deleteProduct,
   reduceQuantityOfProduct,
-  searchProduct
+  searchProduct,
+  getCategory,
+  findProducts
 };

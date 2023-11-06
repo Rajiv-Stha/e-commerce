@@ -1,6 +1,6 @@
 
-let frontendUrl = "http://localhost:5500/frontend"
-
+let frontendUrl = "http://localhost:5500/frontend";
+let backendUrl = "http://localhost:8000/api";
 
 
 const displayCartCount=()=>{
