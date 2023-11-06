@@ -9,7 +9,7 @@ const fetchAllProducts =async()=>{
                 const productCardHtml = document.createElement("div");
                 productCardHtml.classList.add("newProducts_card");
                 productCardHtml.addEventListener("click",()=>{
-                    location.href=  `https://miralimammad.netlify.app/public/html/productDetail.html?productId=${product._id}`
+                    location.href=  `${frontendUrl}/public/html/productDetail.html?productId=${product._id}`
                 })
 
                 productCardHtml.innerHTML = `
@@ -66,6 +66,7 @@ const handleAddToCart=(event,product) =>{
     event.stopPropagation()
     let cartData = {...product,cartQuantity:1}
     addToCart(cartData);
+    displayCartCount()
 }
 const FetchAllMonitors=async()=>{
 
@@ -79,7 +80,7 @@ const FetchAllMonitors=async()=>{
                 const productCardHtml = document.createElement("div");
                 productCardHtml.classList.add("newProducts_card");
                 productCardHtml.addEventListener("click",()=>{
-                    location.href=  `https://miralimammad.netlify.app/public/html/productDetail.html?productId=${product._id}`
+                    location.href=  `${frontendUrl}/public/html/productDetail.html?productId=${product._id}`
                 })
 
                 productCardHtml.innerHTML = `
@@ -133,7 +134,7 @@ const FetchAllLaptops=async()=>{
                 const productCardHtml = document.createElement("div");
                 productCardHtml.classList.add("newProducts_card");
                 productCardHtml.addEventListener("click",()=>{
-                    location.href=  `https://miralimammad.netlify.app/public/html/productDetail.html?productId=${product._id}`
+                    location.href=  `${frontendUrl}/public/html/productDetail.html?productId=${product._id}`
                 })
 
                 productCardHtml.innerHTML = `

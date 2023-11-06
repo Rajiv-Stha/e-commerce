@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../styles/style.css">
 
     <link rel="stylesheet" href="../styles/productDetail.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script defer src="../js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.0/axios.min.js"
         integrity="sha512-WrdC3CE9vf1nBf58JHepuWT4x24uTacky9fuzw2g/3L9JkihgwZ6Cfv+JGTtNyosOhEmttMtEZ6H3qJWfI7gIQ=="
@@ -43,7 +45,6 @@
 
                 <div class="navbarLeft">
                     <a href="../../index.html">
-
                         <img src="../images/logo.png" alt="logo"/>
                     </a>
                     <ul class="navList">
@@ -125,7 +126,16 @@
                         <img src="../icons/mail_icon.png" alt="mail">
                         <img src="../icons/mail_icon.png" alt="mail">
                     </div>
-                    <img class="productDetailImage" src="../images/msi_Cpu.png" alt="product">
+                    <!-- <img class="productDetailImage" src="../images/msi_Cpu.png" alt="product"> -->
+                    <!-- swiper  -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                        
+                       
+                          <!-- <div class="swiper-slide"> <img src="./public/images/slider1.jpg" alt="slider1" class="slider_img"></div> -->
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
                 </div>
             </div>
         </div>
@@ -284,6 +294,42 @@
         </div>
         </footer>
     </div>
-    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
 </body>
 </html>

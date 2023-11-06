@@ -40,7 +40,23 @@ getProductById()
 const displayProductData =()=>{
     document.querySelector(".product-price").innerText = productData.price
     
-    document.querySelector(".productDetailImage").src = productData.image[0]
+
+
+    productData.image.forEach(image=>{
+
+      document.querySelector(".swiper-wrapper").innerHTML +=`
+      
+      <div class="swiper-slide">
+      <img
+      src=${image}
+      alt="slider1"
+      class="slider_img"
+      />
+      </div>
+      
+      `
+    })
+
     handleDetailsTab() 
 } 
 const handleDetailsTab=()=>{
@@ -75,9 +91,9 @@ const handleDetailsTab=()=>{
 
 const handleAddToCart=()=>{
   const cartQuantity = document.querySelector(".addToCartQuantityInput").value
-  
   const cartDatat = {...productData,cartQuantity:Number(cartQuantity)}
   addToCart(cartDatat);
+  displayCartCount();
 }
 const handleEventHandlerToDetailsTab=()=>{
   document.querySelectorAll(".details_tab").forEach(tab=>{
