@@ -13,7 +13,7 @@ const handleLogin = async (e) => {
     try {
       
       const { status, data } = await axios.post(
-        "https://ecommerce-dxp5.onrender.com/api/auth/login",
+        `${backendUrl}/auth/login`,
         emailPayload
       );
       email.value = "";
@@ -24,7 +24,7 @@ const handleLogin = async (e) => {
 
         setTimeout(() => {
           
-          window.location.href = "https://miralimammad.netlify.app/index.html";
+          window.location.href = `${frontendUrl}/index.html`;
         }, 2000);
          showToast("success", "logged in successfully");
       }

@@ -37,10 +37,11 @@
 }
 .clear_filter_btn{
     border-radius: 50px;
-    border: 2px solid #A2A6B0;
-    color: #A2A6B0;
+    border: 2px solid #0156FF;
+    color: #0156FF;
     font-size: 12px;
     font-weight: 600;
+    background-color: white;
     outline: none;
     padding: 8px 0;
     cursor: pointer;
@@ -58,7 +59,9 @@
 
 }
 .allProducts_filter_lists_items{
+    cursor: pointer;
     display: flex;
+    padding: 5px 0 ;
     align-items: center;
     justify-content: space-between;
 }

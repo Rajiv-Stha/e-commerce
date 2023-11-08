@@ -24,7 +24,7 @@ const handleSignup = async (e) => {
         return;
       }
       const { data, status } = await axios.post(
-        "https://ecommerce-dxp5.onrender.com/api/auth/register",
+        `${backendUrl}/auth/register`,
         signupPayload
       );
 
@@ -41,7 +41,7 @@ const handleSignup = async (e) => {
       if (status === 200) {
         setTimeout(() => {
           window.location.href =
-            "https://miralimammad.netlify.app/public/html/login.html";
+            `${frontendUrl}/public/html/login.html`;
         }, 2000);
         showToast("success", "successfully registered");
       }

@@ -15,7 +15,7 @@ const displayAllCarts =()=>{
                                     </div>
                                     </td>
                                     <td>${cart.price}</td>
-                                    <td><input type="number" value="${cart.cartQuantity}"/></td>
+                                    <td><input disabled type="number" value="${cart.cartQuantity}"/></td>
                                     <td>${cart.cartQuantity * Number(cart.price)}</td>
                                 </tr>
 
