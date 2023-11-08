@@ -146,13 +146,30 @@ const getCategory=async(req,res,next)=>{
 
 const findProducts=async(req,res,next)=>{
   const {min,max,category} = req.query;
-
+  let products ;
+  console.log(category,min)
   try {
-    const product = await productModel.find({
-      category,
-      $and:[]
-    })
-    return res.json({message:"okey"})
+
+  if(category && !Number(min)){
+  
+     products = await productModel.find({ category })
+
+
+  }else if(!category && Number(min)){
+        
+ products = await productModel.find({
+  $and:[
+    {
+      price:{$gt:Number(min)}
+    },{
+      price:{$lt:Number(max)}
+    }
+  ]
+  })
+  }else{
+  products = await productModel.find({})
+}
+    return res.json({message:products,success:true})
   } catch (error) {
 
     next(error)

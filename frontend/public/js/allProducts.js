@@ -1,24 +1,32 @@
 let category=""
-let pricing = 0 ;
 let min  =0;
 let max= 0;
 
+const handleAddToCart=(event,product) =>{
+    event.stopPropagation()
+    let cartData = {...product,cartQuantity:1}
+    addToCart(cartData);
+    displayCartCount()
+}
 const fetchAllCategory=async()=>{
-    try {
+         try {
 
        const {data,status} = await axios.get(`${backendUrl}/product/category`);
-       console.log(data)
+
         if(status===200){
             data.message.forEach(cat=>{
-                document.querySelector(".categoryList").innerHTML+=`
 
-                <div class="allProducts_filter_lists_items">
+                const catItem = document.createElement("div");
+                catItem.innerHTML = `
+                   <div class="allProducts_filter_lists_items">
                 <p>${cat}</p>
-                <p>22</p>
             </div>
-                
                 `
-
+                catItem.addEventListener("click",()=>{
+                    category = cat
+                    fetchDataWithFilter()
+                })
+                document.querySelector(".categoryList").append(catItem)
             })
         }
 
@@ -30,7 +38,7 @@ const fetchAllCategory=async()=>{
 }
 const fetchDataWithFilter=async()=>{
   try { 
-
+     document.querySelector(".allProducts_card_wrapper").innerHTML=""
    const {data,status} = await axios.get(`${backendUrl}/product/find?category=${category}&min=${min}&max=${max}`);
     if(status===200){
         
@@ -82,5 +90,22 @@ const fetchDataWithFilter=async()=>{
         console.log(error)
   }
 }
+
+document.querySelectorAll(".priceItemFilter").forEach(item=>{
+    item.addEventListener("click",(e)=>{
+       const minPrice =  e.currentTarget.getAttribute("data-min")
+       const maxPrice =  e.currentTarget.getAttribute("data-max")
+       min = Number(minPrice)|| 1
+       max = Number(maxPrice)
+       fetchDataWithFilter()
+
+    })
+})
+document.querySelector(".clear_filter_btn").addEventListener("click",()=>{
+    category="";
+    min = 0;
+    max = 0;
+    fetchDataWithFilter()
+})
 fetchAllCategory();
 fetchDataWithFilter()
