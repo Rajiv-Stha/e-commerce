@@ -144,10 +144,14 @@ const getCategory=async(req,res,next)=>{
 
 
 
-const findProducts=(req,res,next)=>{
+const findProducts=async(req,res,next)=>{
+  const {min,max,category} = req.query;
 
   try {
-    
+    const product = await productModel.find({
+      category,
+      $and:[]
+    })
     return res.json({message:"okey"})
   } catch (error) {
 
