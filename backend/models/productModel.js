@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-
 const productSchema = mongoose.Schema(
   {
     name: {
@@ -23,10 +22,10 @@ const productSchema = mongoose.Schema(
     category: {
       type: String,
       required: true,
-    }
+    },
+    tags:[],
   },
   { timestamps: true }
 );
 
 module.exports = mongoose.model("product", productSchema);
-
