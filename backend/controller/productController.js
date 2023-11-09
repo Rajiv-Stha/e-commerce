@@ -89,6 +89,8 @@ const searchProduct =async(req,res,next)=>{
                   name: { $regex: req.query.search_query, $options: "i" },
                 },
                 { category: { $regex: req.query.search_query, $options: "i" } },
+                { category: { $regex: req.query.search_query, $options: "i" } },
+              { tags: { $in: [new RegExp(req.query.search_query, "i")] } }
               ],
       });
       res.status(200).json({ message: searchedProducts, success: true });

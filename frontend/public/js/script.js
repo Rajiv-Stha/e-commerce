@@ -18,7 +18,11 @@ const fetchLoggedInUser =()=>{
 const displayLoginUser=()=>{
 
     if(fetchLoggedInUser()){
-        document.querySelector(".navbar_loginBtn").style.display="none"
+
+        if(document.querySelector(".navbar_loginBtn")){
+            document.querySelector(".navbar_loginBtn").style.display = "none"
+        }
+       
         document.querySelector(".userImg").style.display = "block"
     }else{
 document.querySelector(".navbar_loginBtn").style.display="block"
