@@ -74,7 +74,7 @@ const fetchDataWithFilter=async()=>{
                 const addToCartButton = document.createElement("button");
                 addToCartButton.className = "addToCart_btn";
                 addToCartButton.innerHTML = `
-                    <img src="./public/icons/cartIconBLue.png" alt="cart">
+                    <img src="../icons/cartIconBLue.png" alt="cart">
                     <p>Add to Cart</p>
                 `;
 
