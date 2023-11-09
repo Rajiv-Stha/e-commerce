@@ -30,6 +30,7 @@ displayAllCarts()
 document.querySelector(".clear_shoppingCart_btn").addEventListener("click",()=>{
     removeAllCart()
     displayAllCarts()
+    displayCartCount()
 })
 
 
