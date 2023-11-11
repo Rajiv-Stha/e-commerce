@@ -182,3 +182,14 @@
 .shoppingCart_table tbody tr{
     font-size: 14px;
 }
+
+.shippingInput{
+
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid var(--Color---5, #A2A6B0);
+    background: #FFF;
+    height: 40px;
+    font-size: 12px;
+    padding-left: 5px;
+}
