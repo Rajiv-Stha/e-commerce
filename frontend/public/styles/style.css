@@ -177,6 +177,8 @@ hr{
 }
 .newProducts_card_wrapper {
   width: 100%;
+  max-width: 100%;
+  overflow-x: scroll;
   display: flex;
   height: 400px;
 }
