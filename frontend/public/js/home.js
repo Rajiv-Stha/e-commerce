@@ -72,7 +72,7 @@ const FetchAllMonitors=async()=>{
 
 
     try {
-          const {data,status} =  await axios.get(`${backendUrl}/product?subCategory=Monitor`)
+          const {data,status} =  await axios.get(`${backendUrl}/product/search?search_query=Monitor`)
             data.message.forEach((product)=>{
                 
 
@@ -126,7 +126,7 @@ const FetchAllMonitors=async()=>{
 const FetchAllLaptops=async()=>{
 
     try {
-               const {data,status} =  await axios.get(`${backendUrl}/product?subCategory=Laptop`)
+               const {data,status} =  await axios.get(`${backendUrl}/product/search?search_query=Laptop`)
             data.message.forEach((product)=>{
                 
 

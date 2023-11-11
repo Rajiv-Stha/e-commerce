@@ -6,7 +6,14 @@
     <title>My Dashboard</title>
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/myDashbaord.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.0/axios.min.js"
+            integrity="sha512-WrdC3CE9vf1nBf58JHepuWT4x24uTacky9fuzw2g/3L9JkihgwZ6Cfv+JGTtNyosOhEmttMtEZ6H3qJWfI7gIQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script defer src="../js/methods.js"></script>
     <script defer src="../js/script.js"></script>
+    <script defer src="../js/myDashboard.js"></script>
+
 </head>
 <body>
     <div class="myDashboard_container">
@@ -39,16 +46,14 @@
 
                         <img src="../images/logo.png" alt="logo"/>
                     </a>
-                    <ul class="navList">
-                        <li><a href="#">Laptops</a></li>
-                        <li><a href="#">Desktop PCs</a></li>
-                        <li><a href="#">Networking Devices</a></li>
-                        <li><a href="#">Printers & Scanners</a></li>
-                        <li><a href="#">PC Part</a></li>
-                        <li><a href="#">All Other Products</a></li>
-                        <li><a href="#">Repairs</a></li>
-                        <li><a href="#">Our Deals</a></li>
-                    </ul>
+                        <ul class="navList">
+                            <li><a href="./public/html/allProducts.html?search=Laptop">Laptops</a></li>
+                            <li><a href="./public/html/allProducts.html?search=Computer">Desktop PCs</a></li>
+                            <li><a href="./public/html/allProducts.html?search=Monitor">Monitor</a></li>
+                            <li><a href="./public/html/allProducts.html">All Other Products</a></li>
+                            <li><a href="./public/html/termsAndCondition.html">Terms And Conditions </a></li>
+                            <li><a href="./public/html/aboutUs.html">About Us</a></li>
+                        </ul>
                 </div>
                 <div class="navbarRight">
                     <img src="../icons/searchIcon.png" alt="searchIcon" class="nav_searchIcon">
@@ -97,31 +102,25 @@
                             <div class="account_information_info">
                                 <h3>Contact Information</h3>
                                 <div class="account_information_info_para">
-                                    <p>Rajiv Shrestha</p>
-                                    <p>rajiv@gmail.com</p>
+                                    <p class="user_name">Rajiv Shrestha</p>
+                                    <p class="user_email">rajiv@gmail.com</p>
+                                </div>
+                                <div class="account_information_edit_acccount">
+                                    <input type="text" name="" id="" placeholder="username" class="edit_username">
+                                    <input type="text" name="" id="" placeholder="email" class="edit_useremail">
                                 </div>
                                 <div class="account_information_info_links">
-                                    <a href="#">Edit</a>
-                                    <a href="#">Change password</a>
+                                    <a href="#" class="editBtn">Edit</a>
+                                    <a href="#" class="changePwBtn">Change password</a>
                                 </div>
+                                <button class="logutBtn">Logout</button>
                             </div>
-                            <div class="account_information_info">
-                                <h3>Newsletter</h3>
-                                <div class="account_information_info_para">
-                                    <p>You don't subscribe to our Newsletter.</p>
-                                </div>
-                                <div class="account_information_info_links">
-                                    <a href="#">Edit</a>
-                                </div>
-                            </div>
+                          
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-       
-
         <div class="supportSection">
             <div class="support_box">
                 <div class="support_box_imgWrapper">
@@ -255,6 +254,5 @@
         </div>
         </footer>
     </div>
-    
 </body>
 </html>

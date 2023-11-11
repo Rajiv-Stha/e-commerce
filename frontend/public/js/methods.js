@@ -40,3 +40,8 @@ const checkIfAlreadyExist=(product)=>{
 function removeAllCart(){
     localStorage.removeItem("cart")
 }
+const removeUserFromLs=()=>{
+
+    localStorage.removeItem("user")
+
+}

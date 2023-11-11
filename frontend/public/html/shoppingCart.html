@@ -6,6 +6,9 @@
     <title>shopping Cart</title>
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/shoppingCart.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.0/axios.min.js"
+            integrity="sha512-WrdC3CE9vf1nBf58JHepuWT4x24uTacky9fuzw2g/3L9JkihgwZ6Cfv+JGTtNyosOhEmttMtEZ6H3qJWfI7gIQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script defer src="../js/methods.js"></script>
     <script defer src="../js/script.js"></script>
     <script defer src="../js/cart.js"></script>
@@ -99,7 +102,7 @@
                     
                     </div>
                     <div class="shoppingCart_summary_wrapper">
-                        <div class="summaryCart_summary_box">
+                        <form class="summaryCart_summary_box">
 
                             <h2 class="cart_summary_heading">Summary</h2>
                             <p id="summaryCart_para1">Estimate Shipping and Tax</p>
@@ -130,21 +133,24 @@
                                     <p>Order Total</p>
                                     <p id="shoppingOrder_total_cost">$</p>
                                 </div>
+                                <input  required id="shipping_address_input" type="text" placeholder="Shipping address">
+                                <input required id="shipping_phone_input" type="number" placeholder="Shipping Phone Number">
                             </div>
+                            
                             <div class="shoppingCart_btn_wrapper">
 
-                                <button id="proceed_to_checkout_btn">Proceed to Checkout</button>
-                                <button id="checkOut_with_paypal_btn">
+                                <button id="proceed_to_checkout_btn" >Buy Now</button>
+                                <!-- <button id="checkOut_with_paypal_btn">
                                     <p>Checkout with </p>
                                     <img src="../images/paypal.png" alt="">
-                                </button>
+                                </button> -->
                             </div>
                             <div class="shoppingCart_summary_banner">
                                 <img src="../icons/zip_logo.png" alt="banner">
                                 <span>|</span>
                                 <p>own it now, up to 6 months interest free learn more</p>
                             </div>
-                        </div>
+                        </form>
                         
                     </div>
                 </div>

@@ -78,3 +78,6 @@
     font-weight: 300;
     color: #0156FF;
 }
+.account_information_edit_acccount{
+    display: none;
+}
