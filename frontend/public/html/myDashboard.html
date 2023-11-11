@@ -84,26 +84,37 @@
                         <ul class="account_dashboard_box_items">
                             <li><a href="#">Account Dashboard</a></li>
                             <li><a href="#">Account Information</a></li>
-                            <li><a href="#">Address Book</a></li>
                             <li><a href="#">My Orders</a></li>
                             <hr/>
-                            <li><a href="#">Stored Payment Methods</a></li>
-                            <li><a href="#">Billing Agreements</a></li>
-                            <li><a href="#">My Wishlist</a></li>
-                            <hr/>
-                            <li><a href="#">My Product Reviews</a></li>
-                            <li><a href="#">Newsletter Subscriptions</a></li>
                         </ul>
                     </div>
-                    <div class="account_information_box">
+                                <div class="account_information_box orderInfoBox">
+                                    <h2 class="adminDashboardTopic">Latest Orders</h2>
+                                    <table class="admin_dashboard_table">
+                                        <thead>
+                                            <tr>
+                                                <th>Order Id</th>
+                                                <th>Shipping Address</th>
+                                                <th>No Of Products</th>
+                                                <th>Total Price</th>
+                                                <th> Status</th>
+                                                <th>Created At</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="orderAllList">
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                    <div class="account_information_box accountInfoBox">
                         <h2 id="account_information_box_header">Account Information</h2>
                         <hr/>
                         <div class="account_information_info_box_">
                             <div class="account_information_info">
                                 <h3>Contact Information</h3>
                                 <div class="account_information_info_para">
-                                    <p class="user_name">Rajiv Shrestha</p>
-                                    <p class="user_email">rajiv@gmail.com</p>
+                                    <p class="user_name"></p>
+                                    <p class="user_email"></p>
                                 </div>
                                 <div class="account_information_edit_acccount">
                                     <input type="text" name="" id="" placeholder="username" class="edit_username">

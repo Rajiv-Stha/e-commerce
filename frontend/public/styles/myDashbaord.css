@@ -38,6 +38,7 @@
     flex-direction: column;
     gap: 12px;
 }
+
 .account_dashboard_box_items li a{
     font-size: 13px;
     text-decoration: none;
@@ -80,4 +81,45 @@
 }
 .account_information_edit_acccount{
     display: none;
+}
+.admin_dashboard_table tbody tr td {
+    padding: 10px;
+
+    font-size: 14px;
+    color: gray;
+}
+
+/* .admin_dashboard_order_status{
+    background-color: rgba(50, 214, 0, 0.228);
+    color: rgb(0, 164, 11);
+    border-radius: 5px;
+    
+} */
+.admin_dashboard_table{
+    width: 100%;
+}
+.orderAllList{
+    width: 100%;
+}
+
+ tr {
+    height: 85px;
+    border-bottom: 1px solid gray;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #F4F7FF;
+}
+
+ tr:hover {
+    background-color: rgba(128, 128, 128, 0.138);
+
+}
+
+.adminDashboardTopic {
+    letter-spacing: 2px;
+    color: #0156FF;
+}
+
+.admin_dashboard_item li {
+    background-color: rgba(128, 128, 128, 0.09);
 }

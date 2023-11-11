@@ -67,7 +67,6 @@ const buyProduct=async(buyPayload)=>{
                 document.querySelector("#shipping_address_input").value= ""
                 document.querySelector("#shipping_phone_input").value = ""
                 location.href=`${frontendUrl}/public/html/myDashboard.html?order=true`
-
             }
         
     } catch (error) {

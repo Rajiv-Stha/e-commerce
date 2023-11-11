@@ -1,9 +1,10 @@
 let editMode = false
+let  showOrder = true;
+
 
 const displayUserInfo=()=>{
     if(fetchLoggedInUser()){
         let user = fetchLoggedInUser()
-        console.log(user)
 
         document.querySelector(".user_name").innerText = user.username;
         document.querySelector(".user_email").innerText = user.email
@@ -32,9 +33,37 @@ const handleUpdateUser=async()=>{
     }
 
 }
-document.querySelector(".editBtn").addEventListener("click",()=>{
 
-    if(editMode){
+const displayMyOrders = async () => {
+    const user = fetchLoggedInUser()
+
+  try {
+    const { data, status } = await axios.get(`${backendUrl}/order?buyer=${user._id}`)
+    document.querySelector(".orderAllList").innerHTML = "";
+    if (status === 200) {
+      data.message.forEach((order) => {
+        document.querySelector(".orderAllList").innerHTML += `
+        <tr >
+        <td>${order._id}</td>
+        <td>${order.address}</td>
+        <td>${order.item.length}</td>
+        <td>Rs.${order?.totalPrice}</td>
+        <td>${order?.status}</td>
+        <td> ${order.createdAt.split("T")[0]}  </td>
+        </tr>
+        
+        
+        
+        `;
+      });
+    }
+  } catch (error) {
+
+  }
+};
+
+const handleDisplayData=()=>{
+  if(editMode){
         handleUpdateUser()
         document.querySelector(".account_information_info_para").style.display = "block"
         document.querySelector(".account_information_edit_acccount").style.display= "none"
@@ -50,7 +79,28 @@ document.querySelector(".editBtn").addEventListener("click",()=>{
         document.querySelector(".edit_useremail").value = user.email;
         document.querySelector(".editBtn").innerText = "Save";
         editMode = true;
+        displayUserInfo()
     }
-})
+}
+
+document.querySelector(".editBtn").addEventListener("click",handleDisplayData)
+
+const handleSection=()=>{
+    if(showOrder){
+        document.querySelector(".orderInfoBox").style.display = "block"
+        document.querySelector(".accountInfoBox").style.display = "none";
+        displayMyOrders()
+    }else{
+        document.querySelector(".orderInfoBox").style.display = "none"
+        document.querySelector(".accountInfoBox").style.display = "block"
+        displayUserInfo()
+    }
+}
+
+
+
+
+
+
 document.querySelector(".logutBtn").addEventListener("click",handleLogout)
-displayUserInfo()
+handleSection()
