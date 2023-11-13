@@ -97,6 +97,21 @@ const handleSection=()=>{
     }
 }
 
+document.querySelectorAll(".myDashboardSidebarItem").forEach(sec=>{
+    sec.addEventListener("click",(e)=>{
+
+        let id = e.currentTarget.getAttribute("id")
+        console.log(id)
+        if(id==="account"){
+            showOrder = false
+        }else{
+            showOrder=true
+        }
+
+        handleSection()
+
+    })
+})
 
 
 

@@ -1,6 +1,6 @@
 
-// let frontendUrl = "https://miralimammad.netlify.app";
-let frontendUrl = "http://localhost:5500/frontend"
+let frontendUrl = "https://miralimammad.netlify.app";
+// let frontendUrl = "http://localhost:5500/frontend"
 let backendUrl = "https://ecommerce-dxp5.onrender.com/api";
 
 
