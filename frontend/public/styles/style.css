@@ -484,3 +484,40 @@ hr{
   opacity: 0.6;
   font-size: 11px;
 }
+
+/* media query  */
+@media only screen and (min-width: 769px) and (max-width: 992px){
+  #topNav{
+    font-size: 9px;
+  }
+  .navContent{
+    gap: 10px;
+  }
+  .navbarLeft{
+    gap: 1rem;
+  }
+  .navbarLeft img{
+    width: 20px;
+  }
+  .navList{
+    gap: 10px;
+  }
+  .navList li a{
+    font-size: 8.5px;
+  }
+  .navbarRight{
+    gap: 1rem;
+  }
+  .cartCount{
+    font-size: 10px;
+  }
+  .userImg{
+    width: 26px;
+    height: 26px;
+  }
+}
+@media screen  and (min-width:600px) and (max-width:768px){
+  
+}
+@media screen  and (min-width:480px) and (max-width:600px){}
+@media screen  and (max-width:480px){}
