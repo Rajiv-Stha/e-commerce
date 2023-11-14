@@ -1,9 +1,10 @@
 const urlParams = new URLSearchParams(window.location.search);
 const orderId = urlParams.get("orderId");
+console.log(backendUrl)
 const fetchOrderDetails=async()=>{
     if(!orderId)return;
 try {
-   const {status,data}  = await   axiosInstance.get(`/order?_id=${orderId}`)
+   const {status,data}  = await   axios.get(`${backendUrl}/order?_id=${orderId}`)
     if(status===200){
         displayOrderData(data.message[0])
     }
@@ -54,7 +55,7 @@ const updateStatusOfOrder=async()=>{
 
 
     try {
-            const {status,data} = await axiosInstance.put(`/order/${orderId}`,{
+            const {status,data} = await axios.put(`${backendUrl}/order/${orderId}`,{
                 status:orderStatus
             });
 
