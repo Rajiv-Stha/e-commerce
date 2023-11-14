@@ -515,6 +515,24 @@ hr{
     width: 26px;
     height: 26px;
   }
+  .newProducts_header h2 {
+    font-size: 19px;
+}
+  .newProducts_header a {
+    font-size: 14px;
+}
+.newProducts_imgWrapper {
+  height: 110px;
+  width: 145px;
+}
+.newProduct_details {
+  font-size: 11px;
+}
+.newProduct_price{
+  font-size: 16px;
+}
+.sponcers_img_wrapper img {
+  height: 40px;
 }
 @media screen  and (min-width:600px) and (max-width:768px){
   
