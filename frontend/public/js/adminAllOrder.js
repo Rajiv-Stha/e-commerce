@@ -3,14 +3,14 @@ let orderTab = "pending";
 
 const goToOrderDetailsPage=(orderId)=>{
 
-  location.href = `http://127.0.0.1:5500/frontend/public/html/orderDetails.html?orderId=${orderId}`
+  location.href = `${frontendUrl}/public/html/orderDetails.html?orderId=${orderId}`
 
 }
 
 
 const fetchAdminProductsByStatus = async () => {
   try {
-    const { data, status } = await axiosInstance.get(`order?status=${orderTab}`)
+    const { data, status } = await axios.get(`${backendUrl}/order?status=${orderTab}`)
     document.querySelector(".orderAllList").innerHTML = "";
     if (status === 200) {
       data.message.forEach((order) => {

@@ -33,7 +33,11 @@ const handleUpdateUser=async()=>{
     }
 
 }
+const goToOrderDetailsPage=(orderId)=>{
 
+    location.href = `${frontendUrl}/public/html/orderDetails.html?orderId=${orderId}`
+  
+  }
 const displayMyOrders = async () => {
     const user = fetchLoggedInUser()
 
@@ -43,7 +47,7 @@ const displayMyOrders = async () => {
     if (status === 200) {
       data.message.forEach((order) => {
         document.querySelector(".orderAllList").innerHTML += `
-        <tr >
+        <tr onClick="goToOrderDetailsPage('${order._id}')" >
         <td>${order._id}</td>
         <td>${order.address}</td>
         <td>${order.item.length}</td>
@@ -112,10 +116,10 @@ document.querySelectorAll(".myDashboardSidebarItem").forEach(sec=>{
 
     })
 })
-
-
-
-
+let user = fetchLoggedInUser()
+if(user && user?.isAdmin){
+    document.querySelector(".myDashboardSidebarItem").style.display="block"
+}
 
 document.querySelector(".logutBtn").addEventListener("click",handleLogout)
 handleSection()

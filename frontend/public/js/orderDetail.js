@@ -74,5 +74,16 @@ const updateStatusOfOrder=async()=>{
 document.querySelector(".orderDetailsSaveButton").addEventListener("click",updateStatusOfOrder)
 
 
+const whetherToShowAactionButton=()=>{
+   let user =  fetchLoggedInUser()
+   if(user){
+    if(user.isAdmin){
+
+        document.querySelector(".order_details_status_change_box").style.display="flex"
+
+    }
+   }
+}
 
 fetchOrderDetails()
+whetherToShowAactionButton()

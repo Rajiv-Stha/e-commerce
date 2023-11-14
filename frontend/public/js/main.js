@@ -88,7 +88,7 @@ const fetchAllProducts = async () => {
 };
 const fetchBestCategoryProducts = async () => {
   try {
-    const { status, data } = await axiosInstance.get("/product")
+    const { status, data } = await aios.get("/product")
     // console.log("hello", data.message);
     if (status === 200) {
       data.message.forEach((product) => {

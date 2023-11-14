@@ -1,14 +1,14 @@
 // fetching all products in the admin panel
 const fetchAdminProducts = async () => {
     try {
-      const { status, data } = await axiosInstance.get("/product")
+      const { status, data } = await axios.get(`${backendUrl}/product`)
       console.log(data.message, "hi");
       if (status === 200) {
         document.querySelector(".admin_product_card_container").innerHTML = "";
         data.message.forEach((product) => {
           document.querySelector(
             ".admin_product_card_container"
-          ).innerHTML += `<a href="http://127.0.0.1:5500/frontend/public/html/singleProduct.html?productId=${product._id}" class="admin_product_card">
+          ).innerHTML += `<a href="${frontendUrl}/public/html/productDetail.html?productId=${product._id}" class="admin_product_card">
               <div class="admin_product_card_img_wrapper">
                   <img src=${product.image[0]} alt="productImg">
               </div>
@@ -34,7 +34,7 @@ const fetchAdminProducts = async () => {
   // deleting the product card from the database
   const handleAdminCartDelete = async (id) => {
     try {
-      const { data, status } = await axiosInstance.delete(`product/${id}`)
+      const { data, status } = await axios.delete(`${backendUrl}/product/${id}`)
       if (status === 200) {
         showToast("success", "deleted successfully");
         setTimeout(() => {
@@ -49,7 +49,7 @@ const fetchAdminProducts = async () => {
   // fetching category
   const fetchAllCategory = async () => {
     try {
-      const { data, status } = await axiosInstance.get("/category")
+      const { data, status } = await axios.get(`${backendUrl}/category`)
       if (status === 200) {
         data.message.forEach((ca) => {
           document.querySelector(".admin_product_select").innerHTML += `

@@ -1,3 +1,6 @@
+a{
+    text-decoration: none;
+}
 .admin_product_container{
     width: 100%;
     /* background-color: gainsboro; */
@@ -180,21 +183,22 @@
 }
 .deleteProductButtonAdmin{
     text-align: center;
-    height: 45px;
-    border: 1px solid orange !important; 
+    height: 40px;
+    font-size: 13px;
+    border: 1px solid #3D6CE5 !important; 
     outline: none !important;
     width: fit-content !important;
     background-color: white;
     /* background-color:orange!important; */
 }
 .deleteProductButtonAdmin:hover{
-    background-color: orange;
+    background-color: #3D6CE5;
 }
 .deleteProductButtonAdmin:hover > p{
     color: white;
 }
 .deleteProductButtonAdmin p{
-    color: orange;
+    color: #3D6CE5;
     font-size: 15px;
     letter-spacing: 1px;
 
