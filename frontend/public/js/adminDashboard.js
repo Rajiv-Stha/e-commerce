@@ -8,7 +8,7 @@ const goToOrderDetailsPage=(orderId)=>{
   // this function fetches all orders
   const fetchAllOrders = async () => {
     try {
-      const { data, status } = await axiosInstance.get("/order");
+      const { data, status } = await axios.get(`${backendUrl}/order`);
       if (status === 200) {
         data.message.forEach((order) => {
           document.querySelector(".orderList").innerHTML += `
@@ -30,7 +30,7 @@ const goToOrderDetailsPage=(orderId)=>{
   
   const fetchAppStatistics=async()=>{
     try {
-     const {data,status} =  await axiosInstance.get("/product/stats");
+     const {data,status} =  await axios.get(`${backendUrl}/product/stats`);
      if(status===200){
       const {product,order,sale} = data.message
       document.querySelector(".productCount").innerText = product;

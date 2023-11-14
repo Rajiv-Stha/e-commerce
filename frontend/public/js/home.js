@@ -1,6 +1,6 @@
 const fetchAllProducts =async()=>{
     try {
-       const {data} = await axios.get("https://ecommerce-dxp5.onrender.com/api/product");  
+       const {data} = await axios.get(`${backendUrl}/product`);  
 
       
             data.message.forEach(product=>{

@@ -1,7 +1,9 @@
 
 let frontendUrl = "https://miralimammad.netlify.app";
-// let frontendUrl = "http://localhost:5500/frontend"
-let backendUrl = "https://ecommerce-dxp5.onrender.com/api";
+// let frontendUrl = "http://localhost:5500/frontend" 
+// let backendUrl = "https://ecommerce-dxp5.onrender.com/api";
+let backendUrl = "http://localhost:8000/api"
+
 
 
 const displayCartCount=()=>{
