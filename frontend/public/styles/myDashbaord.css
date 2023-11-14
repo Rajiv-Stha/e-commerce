@@ -82,7 +82,6 @@
 .account_information_edit_acccount{
     display: none;
 }
-<<<<<<< HEAD
 .admin_dashboard_table tbody tr td {
     padding: 10px;
 
@@ -123,23 +122,7 @@
 
 .admin_dashboard_item li {
     background-color: rgba(128, 128, 128, 0.09);
-=======
-.logutBtn{
-    width: fit-content;
-    padding: 10px 1rem;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    border-radius: 50px;
-    background-color: #0156FF;
-    color: #fff;
-    font-size: 12px;
-}
-.account_information_edit_acccount{
-    /* display: flex;  */
-    flex-direction: column;
-    gap: 5px;
-    width: 45%;
+
 }
 
 .account_information_edit_acccount input{
@@ -153,5 +136,21 @@
     background: #FFF;
     height: 40px;
     padding-left: 5px;
->>>>>>> 49984dd94476ccdbcf5354eb4e40cd8667e6603b
+}
+.account_information_edit_acccount{
+    /* display: flex;  */
+    flex-direction: column;
+    gap: 5px;
+    width: 45%;
+}
+.logutBtn{
+    width: fit-content;
+    padding: 10px 1rem;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 50px;
+    background-color: #0156FF;
+    color: #fff;
+    font-size: 12px;
 }
