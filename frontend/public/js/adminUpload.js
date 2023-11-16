@@ -6,35 +6,40 @@ let uploadPayload = {
     image:[],
     quantity: "",
     category: "",
+    tags:[],
+    specs:[]
   };
   
-  
+  const specs=[];
   const cloudName = "codewithmama"; // replace with your own cloud name
   const uploadPreset = "wrapfileImg"; // replace with your own upload preset
-  
-  
-  
-  
   
   
   document.querySelector("#uploadForm").addEventListener("submit", async (e) => {
     e.preventDefault();
     // alert("helo");
   
-    let user = getLoginUserFromLs();
-    if (!user) return;
+    // let user = getLoginUserFromLs();
+    // if (!user) return;
     //   uploadPayload.name = document.value
     // uploadPayload.desc= document.qsl
     uploadPayload.name = document.querySelector("#name").value;
     uploadPayload.desc = document.querySelector("#desc").value;
     uploadPayload.price = document.querySelector("#price").value;
     uploadPayload.quantity = document.querySelector("#quantity").value;
-    uploadPayload.category = document.querySelector("#cateogory").value;
-    uploadPayload.owner = user._id;
+    uploadPayload.category = document.querySelector("#category").value;
+    // uploadPayload.owner = user._id;
+    uploadPayload.tags = document.querySelector("#tags").value.split(",")
+    document.querySelectorAll(".specsInputItem").forEach(sp=>{
+      uploadPayload.specs.push(sp.value)
+    })
+    console.log(uploadPayload)
+
   
+
     try {
-      const { data, status } = await axiosInstance.post(
-        "/product/create",
+      const { data, status } = await axios.post(
+        `${backendUrl}/product/create`,
         uploadPayload
       );
       console.log(data, "img");
@@ -60,7 +65,7 @@ let uploadPayload = {
   };
   
   const fetchCategory = async () => {
-    const { data, status } = await axiosInstance.get(
+    const { data, status } = await axios.get(
       "/category"
     );
     if (status === 200) {
@@ -106,5 +111,17 @@ let uploadPayload = {
     false
   );
   
-  
+  // specsContainer
+  document.querySelector(".addSpecsButton").addEventListener("click",async()=>{
+
+    let html = `
+      <input  type="text" placeholder="write about specs" />
+    `
+    let input = document.createElement("input")
+    input.classList.add("specsInputItem")
+    input.setAttribute("placeholder","write about specs")
+
+    document.querySelector(".specsContainer").appendChild(input)
+
+  })
   fetchCategory();
