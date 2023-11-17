@@ -1,8 +1,8 @@
 
-// let frontendUrl = "https://miralimammad.netlify.app";
-let frontendUrl = "http://localhost:5500/frontend" 
-// let backendUrl = "https://ecommerce-dxp5.onrender.com/api";
-let backendUrl = "http://localhost:8000/api"
+let frontendUrl = "https://miralimammad.netlify.app";
+// let frontendUrl = "http://localhost:5500/frontend" 
+let backendUrl = "https://ecommerce-dxp5.onrender.com/api";
+// let backendUrl = "http://localhost:8000/api"
 
 
 
@@ -30,5 +30,6 @@ document.querySelector(".navbar_loginBtn").style.display="block"
         document.querySelector(".userImg").style.display = "none"
     }
 }
+
 displayLoginUser()
 displayCartCount()
