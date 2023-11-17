@@ -117,8 +117,9 @@ document.querySelectorAll(".myDashboardSidebarItem").forEach(sec=>{
     })
 })
 let user = fetchLoggedInUser()
+console.log("user",user)
 if(user && user?.isAdmin){
-    document.querySelector(".myDashboardSidebarItem").style.display="block"
+    document.querySelector(".adminPanelList").style.display="block"
 }
 
 document.querySelector(".logutBtn").addEventListener("click",handleLogout)
