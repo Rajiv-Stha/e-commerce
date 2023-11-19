@@ -25,10 +25,9 @@ document.querySelector(".addToCartQuantityInput").addEventListener("change",(e)=
 const getProductById = async () => {
   try {
     const {  data } = await axios.get(
-      `https://ecommerce-dxp5.onrender.com/api/product?_id=${productId}`
+      `${backendUrl}/product?_id=${productId}`
     );
     productData= data.message[0]
-    console.log(productData)
     displayProductData()
   } catch (error) {
     console.log(error);

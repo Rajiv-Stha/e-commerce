@@ -1,6 +1,11 @@
 let editMode = false
 let  showOrder = false;
+const urlParams = new URLSearchParams(window.location.search);
+const order = urlParams.get("order");
 
+if(order){
+    showOrder=true;
+}
 
 const displayUserInfo=()=>{
     if(fetchLoggedInUser()){

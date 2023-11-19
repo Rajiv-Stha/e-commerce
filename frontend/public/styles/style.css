@@ -13,25 +13,24 @@ hr{
 }
 ::-webkit-scrollbar {
   width: 10px;
-  height: 10px;
+  height: 5px;
   scroll-behavior: smooth;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(182, 182, 182);
+  background: rgb(219, 216, 216);
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #474747;
+  background: #a9a7a7;
 }
 
 .app_container {
@@ -487,7 +486,109 @@ background-image: url("https://w0.peakpx.com/wallpaper/537/766/HD-wallpaper-gami
   opacity: 0.6;
   font-size: 11px;
 }
+/* modal */
 
+.closeModalButton{
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: #4776d4;
+  padding: 5px;
+  place-items: center;
+  display: grid;
+
+}
+.closeModalButton img {
+  width: 100%;
+  height: 100%;
+}
+
+.searchModal {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  display: none;
+  left: 0;
+  position: fixed;
+  z-index: 11;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5rem;
+}
+                    
+                    
+.modalContent{
+  max-width: 500px;
+  min-width: 500px;
+  width: 95%;
+  height: 500px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  padding: 3rem 0 ;
+  position: relative;
+  overflow-y: scroll;
+  
+}
+.modalContent input{
+  width: 95%;
+  border-radius: 8px;
+padding: 0 1rem;
+  border: 1px solid gray;
+  font-size: 14px;
+  outline: none;
+  height: 55px !important;
+
+}
+.modalContent input::placeholder{
+  font-size: 14px;
+
+}
+.modalSearchItemWrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+
+}
+.searchProductImg{
+  width: 80px;
+  border-radius: 8px;
+  height: 80px;
+  object-fit: cover;
+}
+.searchedProducts{
+  text-decoration: none;
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  /* background-color: rgba(128, 128, 128, 0.253); */
+  border-bottom: 1px solid rgba(128, 128, 128, 0.47);
+  padding: 10px;
+  cursor: pointer;
+}
+.searchedProducts:hover{
+  background-color: rgba(128, 128, 128, 0.249);;
+}
+.productInfo{
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.searchProductName{
+  letter-spacing: 0.9px;
+}
+.searchProductPrice{
+  color: gray;
+  letter-spacing: 1px;
+}
 /* media query  */
 @media only screen and (min-width: 769px) and (max-width: 992px){
   #topNav{

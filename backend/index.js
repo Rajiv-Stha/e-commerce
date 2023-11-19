@@ -14,7 +14,7 @@ app.use(
     origin: [ "http://localhost:5500","https://miralimammad.netlify.app"],
     methods: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
-  })
+   })
   );
   
   
