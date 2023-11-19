@@ -61,12 +61,15 @@ const buyProduct=async(buyPayload)=>{
         const {status,data } =  await axios.post(`${backendUrl}/order/create`,buyPayload)
         
             if(status===200){
+                showToast("success", "Product bought successfully");
                 removeAllCart()
                 displayAllCarts()
                 displayCartCount()
                 document.querySelector("#shipping_address_input").value= ""
                 document.querySelector("#shipping_phone_input").value = ""
-                location.href=`${frontendUrl}/public/html/myDashboard.html?order=true`
+                setTimeout(()=>{
+                    location.href=`${frontendUrl}/public/html/myDashboard.html?order=true`
+                },2000)
             }
         
     } catch (error) {
@@ -89,7 +92,6 @@ document.querySelector(".clear_shoppingCart_btn").addEventListener("click",()=>{
 
 
 if(fetchLoggedInUser()){
-
     document.querySelector(".shoppingCartLoginButton").style.display="none"
     document.querySelector(".buyNowButton").style.display="block"
 
