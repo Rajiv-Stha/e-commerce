@@ -82,10 +82,13 @@
 .account_information_edit_acccount{
     display: none;
 }
+.admin_dashboard_table thead tr th{
+    font-size: 11px;
+}
 .admin_dashboard_table tbody tr td {
     padding: 10px;
 
-    font-size: 14px;
+    font-size: 10px;
     color: gray;
 }
 
@@ -103,7 +106,7 @@
 }
 
  tr {
-    height: 85px;
+    height: 70px;
     border-bottom: 1px solid gray;
     cursor: pointer;
     border-radius: 5px;

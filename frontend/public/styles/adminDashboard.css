@@ -2,6 +2,9 @@
     display: flex;
     width: 100%;
 }
+.admin_dashboard_container a{
+text-decoration: none;
+}
 .admin_dashboard_sidebar{
     display: flex;
     /* flex-direction: column; */

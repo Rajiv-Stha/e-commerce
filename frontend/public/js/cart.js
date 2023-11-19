@@ -87,3 +87,12 @@ document.querySelector(".clear_shoppingCart_btn").addEventListener("click",()=>{
 })
 
 
+
+if(fetchLoggedInUser()){
+    document.querySelector(".shoppingCartLoginButton").style.display="none"
+    document.querySelector(".proceed_to_checkout_btn").style.display="block"
+
+}else{
+    document.querySelector(".shoppingCartLoginButton").style.display="block"
+    document.querySelector(".proceed_to_checkout_btn").style.display="none"
+}
