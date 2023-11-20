@@ -641,8 +641,29 @@ padding: 0 1rem;
 .sponcers_img_wrapper img {
   height: 40px;
 }
+.support_box_details h2{
+  font-size: 17px;
+}
+.support_box_details p{
+  font-size: 13px;
+}
+.footer_subscribe_box_left h1 {
+font-size: 15px;
+}
+.footer_subscribe_box_left p {
+  font-size: 11px;
+}
+.footer_subscribe_box_right input{
+  width: 325px;
+}
+.footer_subscribe_btn {
+  height: 43px;
+  width: 100px;
+}
+
+}
 @media screen  and (min-width:600px) and (max-width:768px){
   
 }
 @media screen  and (min-width:480px) and (max-width:600px){}
-@media screen  and (max-width:480px){}
+/* @media screen  and (max-width:480px){} */
