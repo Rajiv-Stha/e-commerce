@@ -789,14 +789,49 @@ hr {
   .navList {
     gap: 10px;
 }
+.navbarLeft {
+  gap: 1rem;
+}
 .navbarLeft img{
   width: 25px;
+}
+.navbar_loginBtn {
+ 
+  padding: 5px;
+  font-size: 10px;
 }
 .navList li a {
   font-size: 8px;
 }
   .navbarRight {
-    gap: 1rem;
+    gap: 10px;
+}
+.navbarRight img{
+  width: 16px;
+}
+.newProducts_header h2 {
+  font-size: 20px;
+}
+.newProducts_header a{
+  font-size: 12px;
+}
+.topNavLeft p{
+  font-size: 6px;
+}
+.topNavMiddle p{
+  font-size: 7px;
+}
+.topNavMiddle a{
+  font-size: 8px;
+}
+.topNavRight p{
+  font-size: 7px;
+}
+.topNavRight img{
+  width: 12px;
+}
+.Msi_Gs_Series_list_items li a {
+font-size: 12px;
 }
   .customeBuild_banner {
     min-width: 185px;
