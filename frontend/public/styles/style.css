@@ -622,15 +622,30 @@ padding: 0 1rem;
     width: 26px;
     height: 26px;
   }
+  .newProducts_section {
+    gap: 1rem;
+}
   .newProducts_header h2 {
     font-size: 19px;
+}
+.customeBuild_banner {
+  min-width: 200px;
+  height: 315px;
 }
   .newProducts_header a {
     font-size: 14px;
 }
 .newProducts_imgWrapper {
-  height: 110px;
-  width: 145px;
+  /* height: 110px;
+  width: 145px; */
+  height: 95px;
+  width: 150px;
+}
+.newProducts_card_wrapper {
+  height: 320px;
+}
+.newProducts_Img {
+  width: 80%;
 }
 .newProduct_details {
   font-size: 11px;
@@ -663,6 +678,9 @@ font-size: 15px;
 
 }
 @media screen  and (min-width:600px) and (max-width:768px){
+  .footerInnerContent {
+    width: 100%;
+}
   
 }
 @media screen  and (min-width:480px) and (max-width:600px){}
