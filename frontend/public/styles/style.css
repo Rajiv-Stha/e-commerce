@@ -799,7 +799,7 @@ hr {
     gap: 1rem;
 }
   .customeBuild_banner {
-    width: 200px;
+    min-width: 185px;
     height: 357px;
 }
 .newProducts_card_wrapper {
