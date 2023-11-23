@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -7,10 +8,12 @@
   list-style: none;
   color: inherit;
 }
-hr{
+
+hr {
   border: none;
   border-bottom: 1px solid #CACDD8;
 }
+
 ::-webkit-scrollbar {
   width: 10px;
   height: 5px;
@@ -47,6 +50,7 @@ hr{
   height: 5vh;
   width: 100%;
 }
+
 .topNavContent {
   display: flex;
   justify-content: space-between;
@@ -55,8 +59,9 @@ hr{
   height: 100%;
   margin: auto;
 }
-.topNavLeft {
-}
+
+.topNavLeft {}
+
 .topNavLeft span {
   color: #a2a6b0;
 }
@@ -67,14 +72,17 @@ hr{
   color: #a2a6b0;
   align-items: center;
 }
+
 .topNavMiddle a {
   color: white !important;
 }
+
 .topNavRight {
   display: flex;
   align-items: center;
   gap: 8px;
 }
+
 /* navbar stylying */
 #navbar {
   display: flex;
@@ -82,6 +90,7 @@ hr{
   justify-content: center;
   height: 10vh;
 }
+
 .navContent {
   justify-content: space-between;
   display: flex;
@@ -89,14 +98,17 @@ hr{
   height: 100%;
   width: 80%;
 }
+
 .navbarLeft {
   display: flex;
   align-items: center;
   gap: 2rem;
 }
-#logo_img{
+
+#logo_img {
   width: 25px;
 }
+
 .navList {
   display: flex;
   gap: 1rem;
@@ -107,36 +119,42 @@ hr{
   text-decoration: none;
   font-size: 12px;
   font-weight: 600;
-  
+
 }
-.navList li a:hover{
+
+.navList li a:hover {
   background: #0156FF;
   padding: 0.9rem 12px;
   border-radius: 2rem;
   color: #fff;
   transition: 0.2s ease-in-out;
-  
+
 }
+
 .navbarRight {
   display: flex;
   align-items: center;
   gap: 2rem;
 }
-.cartBox{
+
+.cartBox {
   display: flex;
   align-items: center;
   gap: 3px;
 }
-.cartCount{
+
+.cartCount {
   font-size: 12px;
 }
+
 .userImg {
   width: 36px;
   height: 36px;
   border-radius: 50%;
   object-fit: cover;
 }
-.navbar_loginBtn{
+
+.navbar_loginBtn {
   background: #0156FF;
   color: #fff;
   border: none;
@@ -153,9 +171,11 @@ hr{
   width: 80%;
   margin: auto;
 }
+
 .sliderImg_wrapper {
   width: 100%;
 }
+
 .sliderImg_wrapper img {
   width: 100%;
 }
@@ -166,15 +186,18 @@ hr{
   flex-direction: column;
   gap: 2rem;
 }
+
 .newProducts_header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .newProducts_header h2 {
   font-weight: 600;
   font-size: 22px;
 }
+
 .newProducts_card_wrapper {
   width: 100%;
   max-width: 100%;
@@ -182,6 +205,7 @@ hr{
   display: flex;
   height: 410px;
 }
+
 .newProducts_card {
   display: flex;
   flex-direction: column;
@@ -190,20 +214,23 @@ hr{
   justify-content: center;
   padding: 1rem;
   gap: 10px;
-  transition: all 0.5s ease; /* Defining the transition property */
+  transition: all 0.5s ease;
+  /* Defining the transition property */
   cursor: pointer;
 }
+
 .newProducts_card:hover {
 
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   /* background-color: red; */
-  
+
 }
 
 .newProducts_stockInfo_para {
   font-size: 10px;
   color: #78a962;
 }
+
 .newProducts_imgWrapper {
   display: flex;
   align-items: center;
@@ -212,28 +239,34 @@ hr{
   width: 165px;
   align-self: center;
 }
+
 .newProducts_Img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .newProduct_review_box {
   font-size: 12px;
   color: #a2a6b0;
 }
+
 .newProduct_details {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 12px;
 }
+
 .newProduct_delPrice {
   font-size: 13px;
   color: #666;
 }
+
 .newProduct_price {
   font-size: 19px;
 }
+
 .addToCart_btn {
   display: none;
   /* display: flex; */
@@ -249,7 +282,8 @@ hr{
   align-self: center;
   transition: all 1.5s ease;
 }
-.newProducts_card:hover .addToCart_btn{
+
+.newProducts_card:hover .addToCart_btn {
   display: flex;
 }
 
@@ -263,12 +297,14 @@ hr{
   align-items: center;
   gap: 2rem;
 }
+
 .Msi_Gs_Series_list_items li a {
   text-decoration: none;
   color: #838383;
   font-size: 15px;
   font-weight: 600;
 }
+
 .Msi_Gs_Series_active {
   color: #000 !important;
 }
@@ -283,12 +319,15 @@ hr{
   position: relative;
   z-index: 2;
 }
+
 #customeBuild_banner2 {
   background-image: url("../images/MSI_seires.png") !important;
 }
-#customeBuild_banner3{
-background-image: url("https://w0.peakpx.com/wallpaper/537/766/HD-wallpaper-gaming-pc-colourful-gaming-pc-thumbnail.jpg");
+
+#customeBuild_banner3 {
+  background-image: url("https://w0.peakpx.com/wallpaper/537/766/HD-wallpaper-gaming-pc-colourful-gaming-pc-thumbnail.jpg");
 }
+
 .customBg {
   position: absolute;
   width: 100%;
@@ -296,6 +335,7 @@ background-image: url("https://w0.peakpx.com/wallpaper/537/766/HD-wallpaper-gami
   z-index: -1;
   background-color: rgba(0, 0, 0, 0.4);
 }
+
 .customBuildContent {
   height: 70%;
   width: 100%;
@@ -306,9 +346,11 @@ background-image: url("https://w0.peakpx.com/wallpaper/537/766/HD-wallpaper-gami
   align-items: center;
   flex-direction: column;
 }
+
 .customBuilMainText {
   text-align: center;
 }
+
 .customeBuild_banner h3 {
   font-size: 22px;
   letter-spacing: 1px;
@@ -317,15 +359,18 @@ background-image: url("https://w0.peakpx.com/wallpaper/537/766/HD-wallpaper-gami
 .customeBuild_banner a {
   font-size: 12px;
 }
+
 /* sponcers section  */
-.sponcers_wrapper{
+.sponcers_wrapper {
   width: 100%;
 }
-.sponcers_innerWrapper{
+
+.sponcers_innerWrapper {
   width: 80%;
   margin: auto;
 }
-.sponcers_img_wrapper{
+
+.sponcers_img_wrapper {
   /* background-color: red; */
   display: flex;
   align-items: center;
@@ -333,7 +378,8 @@ background-image: url("https://w0.peakpx.com/wallpaper/537/766/HD-wallpaper-gami
   padding: 1rem 0;
   gap: 1.5rem;
 }
-.sponcers_img_wrapper img{
+
+.sponcers_img_wrapper img {
   /* width: 200px; */
   flex: 1;
   object-fit: contain;
@@ -350,6 +396,7 @@ background-image: url("https://w0.peakpx.com/wallpaper/537/766/HD-wallpaper-gami
   padding: 3rem;
   background-color: #f5f7ff;
 }
+
 .support_box {
   display: flex;
   flex-direction: column;
@@ -358,6 +405,7 @@ background-image: url("https://w0.peakpx.com/wallpaper/537/766/HD-wallpaper-gami
   justify-content: center;
   width: 265px;
 }
+
 .support_box_imgWrapper {
   width: 65px;
   height: 65px;
@@ -367,11 +415,13 @@ background-image: url("https://w0.peakpx.com/wallpaper/537/766/HD-wallpaper-gami
   align-items: center;
   justify-content: center;
 }
+
 .support_box_imgWrapper img {
   width: 50%;
   height: 50%;
   object-fit: cover;
 }
+
 .support_box_details {
   display: flex;
   flex-direction: column;
@@ -379,50 +429,61 @@ background-image: url("https://w0.peakpx.com/wallpaper/537/766/HD-wallpaper-gami
   align-items: center;
   justify-content: center;
 }
+
 .support_box_details h2 {
   font-size: 18px;
 }
+
 .support_box_details p {
   font-size: 14px;
   text-align: center;
 }
+
 /* footer stylying */
 .footer {
   width: 100%;
   /* height: 520px; */
   background-color: #020203;
 }
+
 .footerInnerContent {
   width: 80%;
   margin: auto;
 }
+
 .footer_content {
   padding: 1rem 0rem;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+
 .footer_subscribe_box {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .footer_subscribe_box_left {
   color: white;
 }
+
 .footer_subscribe_box_left h1 {
   font-weight: 500;
   font-size: 31px;
 }
+
 .footer_subscribe_box_left p {
   font-size: 12px;
   font-weight: 300;
 }
+
 .footer_subscribe_box_right {
   display: flex;
   align-items: center;
   gap: 12px;
 }
+
 .footer_subscribe_box_right input {
   width: 390px;
   height: 45px;
@@ -434,6 +495,7 @@ background-image: url("https://w0.peakpx.com/wallpaper/537/766/HD-wallpaper-gami
   font-size: 11px;
   color: #fff;
 }
+
 .footer_subscribe_btn {
   height: 45px;
   font-size: 11px;
@@ -445,29 +507,35 @@ background-image: url("https://w0.peakpx.com/wallpaper/537/766/HD-wallpaper-gami
   color: #fff;
   cursor: pointer;
 }
+
 .footer_items_box {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
+
 .footer_item {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+
 .footer_item p {
   color: rgba(255, 255, 255, 0.5);
   font-weight: 700;
   font-size: 11px;
 }
+
 .footer_item_lists {
   color: #fff;
   font-size: 10px;
   font-weight: 400;
 }
+
 .footer_item_lists li a {
   text-decoration: none;
 }
+
 .footer_item_lists li a span {
   color: #01a4ff;
 }
@@ -478,20 +546,23 @@ background-image: url("https://w0.peakpx.com/wallpaper/537/766/HD-wallpaper-gami
   justify-content: space-between;
   padding: 1rem 0;
 }
+
 .footer_copywrite_section_item {
   display: flex;
 
   align-items: center;
   gap: 10px;
 }
+
 .footer_copywrite_section_item p {
   color: #fff;
   opacity: 0.6;
   font-size: 11px;
 }
+
 /* modal */
 
-.closeModalButton{
+.closeModalButton {
   width: 30px;
   height: 30px;
   border-radius: 5px;
@@ -504,6 +575,7 @@ background-image: url("https://w0.peakpx.com/wallpaper/537/766/HD-wallpaper-gami
   display: grid;
 
 }
+
 .closeModalButton img {
   width: 100%;
   height: 100%;
@@ -522,9 +594,9 @@ background-image: url("https://w0.peakpx.com/wallpaper/537/766/HD-wallpaper-gami
   background-color: rgba(0, 0, 0, 0.5);
   padding: 5rem;
 }
-                    
-                    
-.modalContent{
+
+
+.modalContent {
   max-width: 500px;
   min-width: 500px;
   width: 95%;
@@ -535,39 +607,44 @@ background-image: url("https://w0.peakpx.com/wallpaper/537/766/HD-wallpaper-gami
   flex-direction: column;
   gap: 2rem;
   align-items: center;
-  padding: 3rem 0 ;
+  padding: 3rem 0;
   position: relative;
   overflow-y: scroll;
-  
+
 }
-.modalContent input{
+
+.modalContent input {
   width: 95%;
   border-radius: 8px;
-padding: 0 1rem;
+  padding: 0 1rem;
   border: 1px solid gray;
   font-size: 14px;
   outline: none;
   height: 55px !important;
 
 }
-.modalContent input::placeholder{
+
+.modalContent input::placeholder {
   font-size: 14px;
 
 }
-.modalSearchItemWrapper{
+
+.modalSearchItemWrapper {
   width: 100%;
   display: flex;
   flex-direction: column;
-  
+
 
 }
-.searchProductImg{
+
+.searchProductImg {
   width: 80px;
   border-radius: 8px;
   height: 80px;
   object-fit: cover;
 }
-.searchedProducts{
+
+.searchedProducts {
   text-decoration: none;
   display: flex;
   width: 100%;
@@ -577,111 +654,205 @@ padding: 0 1rem;
   padding: 10px;
   cursor: pointer;
 }
-.searchedProducts:hover{
-  background-color: rgba(128, 128, 128, 0.249);;
+
+.searchedProducts:hover {
+  background-color: rgba(128, 128, 128, 0.249);
+  ;
 }
-.productInfo{
+
+.productInfo {
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
 }
-.searchProductName{
+
+.searchProductName {
   letter-spacing: 0.9px;
 }
-.searchProductPrice{
+
+.searchProductPrice {
   color: gray;
   letter-spacing: 1px;
 }
+
 /* media query  */
-@media only screen and (min-width: 769px) and (max-width: 992px){
-  #topNav{
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  #topNav {
     font-size: 9px;
   }
-  .navContent{
+
+  .navContent {
     gap: 10px;
   }
-  .navbarLeft{
+
+  .navbarLeft {
     gap: 1rem;
   }
-  .navbarLeft img{
+
+  .navbarLeft img {
     width: 20px;
   }
-  .navList{
+
+  .navList {
     gap: 10px;
   }
-  .navList li a{
+
+  .navList li a {
     font-size: 8.5px;
   }
-  .navbarRight{
+
+  .navbarRight {
     gap: 1rem;
   }
-  .cartCount{
+
+  .cartCount {
     font-size: 10px;
   }
-  .userImg{
+
+  .userImg {
     width: 26px;
     height: 26px;
   }
+
   .newProducts_section {
     gap: 1rem;
-}
+  }
+
   .newProducts_header h2 {
     font-size: 19px;
-}
-.customeBuild_banner {
-  min-width: 200px;
-  height: 315px;
-}
+  }
+
+  .customeBuild_banner {
+    min-width: 200px;
+    height: 315px;
+  }
+
   .newProducts_header a {
     font-size: 14px;
-}
-.newProducts_imgWrapper {
-  /* height: 110px;
+  }
+
+  .newProducts_imgWrapper {
+    /* height: 110px;
   width: 145px; */
-  height: 95px;
-  width: 150px;
+    height: 95px;
+    width: 150px;
+  }
+
+  .newProducts_card_wrapper {
+    height: 320px;
+  }
+
+  .newProducts_Img {
+    width: 80%;
+  }
+
+  .newProduct_details {
+    font-size: 11px;
+  }
+
+  .newProduct_price {
+    font-size: 16px;
+  }
+
+  .sponcers_img_wrapper img {
+    height: 40px;
+  }
+
+  .support_box_details h2 {
+    font-size: 17px;
+  }
+
+  .support_box_details p {
+    font-size: 13px;
+  }
+
+  .footer_subscribe_box_left h1 {
+    font-size: 15px;
+  }
+
+  .footer_subscribe_box_left p {
+    font-size: 11px;
+  }
+
+  .footer_subscribe_box_right input {
+    width: 325px;
+  }
+
+  .footer_subscribe_btn {
+    height: 43px;
+    width: 100px;
+  }
+
+}
+
+@media screen and (min-width:600px) and (max-width:768px) {
+  .navList {
+    gap: 10px;
+}
+.navbarLeft img{
+  width: 25px;
+}
+.navList li a {
+  font-size: 8px;
+}
+  .navbarRight {
+    gap: 1rem;
+}
+  .customeBuild_banner {
+    width: 200px;
+    height: 357px;
 }
 .newProducts_card_wrapper {
-  height: 320px;
+  align-items: center;
+}
+.newProducts_card {
+  width: 210px;
+  height: fit-content;
 }
 .newProducts_Img {
   width: 80%;
+  height:fit-content;
 }
-.newProduct_details {
-  font-size: 11px;
-}
-.newProduct_price{
+.newProduct_price {
   font-size: 16px;
 }
+.addToCart_btn {
+  padding: 6px 15px;
+}
 .sponcers_img_wrapper img {
-  height: 40px;
+  height: 34px;
 }
-.support_box_details h2{
-  font-size: 17px;
+.supportSection {
+  padding: 2rem 1rem;
+  justify-content: center;
+  gap: 10px;
 }
-.support_box_details p{
+.support_box_imgWrapper {
+  width: 50px;
+  height: 50px;
+}
+.support_box_details h2 {
+  font-size: 16px;
+}
+.support_box_details p {
   font-size: 13px;
 }
+.footer_subscribe_box_right input {
+  width: 300px;
+ 
+}
 .footer_subscribe_box_left h1 {
-font-size: 15px;
+  font-size: 15px;
 }
 .footer_subscribe_box_left p {
-  font-size: 11px;
+  font-size: 10px;
 }
-.footer_subscribe_box_right input{
-  width: 325px;
-}
-.footer_subscribe_btn {
-  height: 43px;
-  width: 100px;
-}
-
-}
-@media screen  and (min-width:600px) and (max-width:768px){
   .footerInnerContent {
     width: 100%;
+  }
+
 }
-  
-}
-@media screen  and (min-width:480px) and (max-width:600px){}
+
+@media screen and (min-width:480px) and (max-width:600px) {}
+
 /* @media screen  and (max-width:480px){} */
