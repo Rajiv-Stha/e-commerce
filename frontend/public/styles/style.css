@@ -204,12 +204,15 @@ hr {
   overflow-x: scroll;
   display: flex;
   height: 410px;
+  align-items: center;
+  align-items: center;
 }
 
 .newProducts_card {
   display: flex;
   flex-direction: column;
   width: 220px;
+  height: fit-content;
   text-decoration: none !important;
   justify-content: center;
   padding: 1rem;
@@ -948,11 +951,81 @@ hr {
     display: none;
   }
 
+  .newProducts_header h2 {
+    font-size: 17px;
+}
+.newProducts_header a{
+  font-size: 12px;
+}
+.newProducts_section {
+  gap: 10px;
+}
+
+.Msi_Gs_Series_list_items li a {
+  font-size: 10px;
+}
+  .newProducts_stockInfo_para {
+    font-size: 9px;
+}
+.newProducts_imgWrapper {
+  height: 100px;
+  width: 145px;
+}
+  .sponcers_img_wrapper img {
+    width: 45px;
+  }
+  .newProduct_review_box {
+    font-size: 10px;
+}
+.newProduct_details {
+  font-size: 10px;
+}
+.newProduct_price {
+  font-size: 15px;
+}
+.addToCart_btn img{
+  width: 13px;
+}
+.addToCart_btn p {
+  font-size: 10px;
+}
+.addToCart_btn {
+ 
+  padding: 5px 13px;
+  gap: 5px;
+  border: 1.5px solid #0156ff;
+}
+.newProducts_card_wrapper {
+  height: 330px;
+}
+
+.customeBuild_banner {
+  min-width: 200px;
+  height: 308px;
+}
+.customeBuild_banner h3 {
+  font-size: 19px;
+}
+
   .supportSection {
    
     flex-direction: column;
-    gap: 1.3rem;
+    gap: 12px;
     padding: 2rem 1rem;
+}
+
+.support_box_imgWrapper {
+  width: 45px;
+  height: 45px;
+}
+.support_box_details {
+  gap: 9px;
+}
+.support_box_details h2 {
+  font-size: 16px;
+}
+.support_box_details p {
+  font-size: 11px;
 }
   .footer_subscribe_box{
     flex-direction: column;
@@ -977,6 +1050,9 @@ hr {
 }
 .footer_items_box {
   gap: 8px;
+}
+.footer_payment_img {
+  width: 30px;
 }
 }
 
