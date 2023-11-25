@@ -314,8 +314,8 @@ hr {
 
 .customeBuild_banner {
   display: flex;
-  min-width: 233px;
-  height: 400px;
+  min-width: 215px;
+  height: 368px;
   color: white;
   background-image: url("https://images.pexels.com/photos/593093/pexels-photo-593093.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
   background-size: contain;
@@ -1056,4 +1056,140 @@ hr {
 }
 }
 
-/* @media screen  and (max-width:480px){} */
+@media screen  and (max-width:480px){
+  #topNav{
+    display: none;
+  }
+  #navbar{
+    display: none;
+  }
+
+  .newProducts_header h2 {
+    font-size: 15px;
+}
+.newProducts_header a{
+  font-size: 10px;
+}
+.newProducts_section {
+  gap: 10px;
+}
+.Msi_Gs_Series_list_items {
+  gap: 1rem;
+}
+.Msi_Gs_Series_list_items li a {
+  font-size: 7px;
+}
+  .newProducts_stockInfo_para {
+    font-size: 9px;
+}
+.newProducts_imgWrapper {
+  height: 100px;
+  width: 145px;
+}
+  .sponcers_img_wrapper img {
+    width: 35px;
+  }
+  .newProduct_review_box {
+    font-size: 10px;
+}
+.newProduct_details {
+  font-size: 10px;
+}
+.newProduct_price {
+  font-size: 15px;
+}
+.addToCart_btn img{
+  width: 13px;
+}
+.addToCart_btn p {
+  font-size: 10px;
+}
+.addToCart_btn {
+ 
+  padding: 5px 13px;
+  gap: 5px;
+  border: 1.5px solid #0156ff;
+}
+.newProducts_card_wrapper {
+  height: 330px;
+}
+
+.customeBuild_banner {
+  min-width: 200px;
+  height: 308px;
+}
+.customeBuild_banner h3 {
+  font-size: 19px;
+}
+
+  .supportSection {
+   
+    flex-direction: column;
+    gap: 12px;
+    padding: 2rem 1rem;
+}
+
+.support_box_imgWrapper {
+  width: 45px;
+  height: 45px;
+}
+.support_box_details {
+  gap: 9px;
+}
+.support_box_details h2 {
+  font-size: 16px;
+}
+.support_box_details p {
+  font-size: 11px;
+}
+.sponcers_img_wrapper {
+ 
+  gap: 10px;
+}
+  .footer_subscribe_box{
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+  }
+  .footer_subscribe_box_left h1 {
+    font-size: 16px;
+}
+.footer_subscribe_box_left p {
+  font-size: 9px;
+}
+.footer_subscribe_box_right {
+  
+  gap: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer_subscribe_box_right input {
+  width: 250px;
+  height: 35px;
+  font-size: 9px;
+}
+.footer_subscribe_btn {
+  height: 35px;
+  font-size: 10px;
+  width: 100px;
+}
+.footer_items_box {
+  gap: 8px;
+  flex-direction: column;
+}
+.footer_copywrite_section_item {
+  gap: 5px;
+}
+.footer_payment_img {
+  width: 20px;
+}
+.footer_copywrite_section {
+  gap: 5px;
+}
+  .footer_socialMedia_icon{
+    width: 14px;
+  }
+  .footer_copywrite_section_item p {
+    font-size: 8px;
+}
+}
