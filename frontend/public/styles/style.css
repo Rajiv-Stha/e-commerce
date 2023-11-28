@@ -947,12 +947,68 @@ hr {
   #navbar{
     display: none;
   }
+  .newProducts_card {
+   
+    padding: 0.9rem !important;
+    gap: 8px !important;
+    height: fit-content !important;
+}
 
+  .newProducts_stockInfo_para {
+    font-size: 9px;
+}
+.newProducts_stockInfo_para {
+    font-size: 8px;
+    color: #78a962;
+}
+.newProducts_imgWrapper {
+  height: 115px;
+}
+.newProducts_imgWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 115px;
+    width: 165px;
+    align-self: center;
+}
+.newProduct_review_box {
+  font-size: 10px;
+}
+.newProduct_price {
+  font-size: 16px;
+}
+.newProduct_details {
+  font-size: 10px;
+}
+
+.newProducts_card_wrapper {
+  align-items: center;
+  height: 375px;
+}
+
+.customeBuild_banner {
+  min-width: 215px;
+  height: 319px;
+  
+}
+.customeBuild_banner h3 {
+  font-size: 18px;
+}
+.customeBuild_banner a {
+  font-size: 11px;
+}
+.Msi_Gs_Series_list_items li a {
+  font-size: 11px;
+}
   .supportSection {
    
     flex-direction: column;
     gap: 1.3rem;
     padding: 2rem 1rem;
+}
+.sponcers_img_wrapper img {
+  height: 35px;
 }
   .footer_subscribe_box{
     flex-direction: column;
