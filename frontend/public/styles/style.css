@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
   list-style: none;
   color: inherit;
+  font-family: 'Poppins', sans-serif;
 }
 
 hr {
@@ -27,7 +27,7 @@ hr {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(219, 216, 216);
+  background: rgba(219, 216, 216, 0.308);
   border-radius: 10px;
 }
 
@@ -267,9 +267,15 @@ hr {
 }
 
 .newProduct_price {
-  font-size: 19px;
+  font-size: 16px;
+  font-weight: 600;
 }
+.productName{
 
+}
+.productDesc{
+  color: gray;
+}
 .addToCart_btn {
   display: none;
   /* display: flex; */
@@ -677,6 +683,89 @@ hr {
   color: gray;
   letter-spacing: 1px;
 }
+
+/* category styles start */
+
+.categorySection {
+  margin: auto;
+  border-bottom: 1px solid rgba(218, 218, 218, 0.405);
+  height: 400px;
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.categoryWrapper {
+  display: flex;
+  gap: 1rem;
+  overflow-x: scroll;
+  padding: 2rem 0rem;
+  padding-left: 2px;
+  width: 100%;
+}
+
+.categoryItem {
+  min-width: 250px;
+  height: 150px;
+  cursor: pointer;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  /* border: 1px solid rgba(218, 218, 218, 0.344); */
+  ;
+  ;
+}
+
+.categoryItem h3 {
+  font-weight: 500;
+  font-size: 16px;
+  color: gray;
+  letter-spacing: 0.8px;
+}
+
+.categoryItem img {
+
+  width: 50px;
+  height: 50px;
+}
+
+.categoryHeaer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.topicTop {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+/* category styles ends */
+
+/* global styles */
+.styledBox{
+  width: 20px;
+  height: 40px;
+  background-color: #0156FF;
+  border-radius: 5px;
+}
+
+.topicTitle{
+
+  font-weight: 600;
+}
+.topicName{
+  font-size: 14px;
+  letter-spacing: 0.9px;
+  color: #0156FF;
+  font-weight: 600;
+}
+
 
 /* media query  */
 @media only screen and (min-width: 769px) and (max-width: 992px) {

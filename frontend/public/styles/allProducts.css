@@ -1,17 +1,42 @@
 .allProducts_content{
-    padding: 1rem 0 3rem 0;
+    /* padding: 1rem 0 3rem 0; */
 }
 .allProducts_innerContent{
     display: flex;
     gap: 2rem;
-    width: 80%;
+    width: 100%;
     margin: auto;
     flex-direction: column;
+    min-height: 500px;
+    border-bottom: 1px solid rgba(218, 218, 218, 0.632);;
+    justify-content: center;
+    margin-top: 3rem;
 }
+.bannerSection{
+    width: 100%;
+    background-color: black;
+    height:500px;
+    position: relative;
+}
+.bannerBlack{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg ,rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));;
+}
+.bannerSection img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .allProducts_card_filter_wrapper{
     display: flex;
     gap: 8px;
     align-items: flex-start;
+
 }
 .allProducts_filter_brand_wrapper{
     flex: 3;
