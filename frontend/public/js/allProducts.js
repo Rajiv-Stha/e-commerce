@@ -1,8 +1,8 @@
 
 const urlParams = new URLSearchParams(window.location.search);
 const searchQuery= urlParams.get("search");
+const category= urlParams.get("category");
 
-let category=""
 let min  =0;
 let max= 0;
 const handleAddToCart=(event,product) =>{
@@ -38,6 +38,14 @@ const fetchAllCategory=async()=>{
         console.log(error)
         
     }
+}
+const bannerImageMapping={
+    phone:"../images/mobile.jpeg",
+    smartwatch:"../images/watch.jpeg",
+    headphone:"../images/headphone.jpeg",
+    gaming:"../images/gaming.avif",
+    computer:"../images/computer.jpg",
+    camera:"../images/camera.jpeg",
 }
 // const fetchDataWithFilter=async()=>{
 //   try { 
@@ -171,6 +179,10 @@ const searchProductInAllProducts =async()=>{
 if(searchQuery){
     searchProductInAllProducts()
 }else{
-    fetchDataWithFilter()
+    // fetchDataWithFilter()
 }
+const addBanner=()=>{
+    document.querySelector(".categoryImage").src=bannerImageMapping[category.toLowerCase()]
+}
+addBanner()
 fetchAllCategory();
