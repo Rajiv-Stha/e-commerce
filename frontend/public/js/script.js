@@ -1,8 +1,8 @@
 
-let frontendUrl = "https://miralimammad.netlify.app";
-// let frontendUrl = "http://localhost:5500/frontend" 
-let backendUrl = "https://ecommerce-dxp5.onrender.com/api";
-// let backendUrl = "http://localhost:8000/api"
+// let frontendUrl = "https://miralimammad.netlify.app";
+let frontendUrl = "http://localhost:5500/frontend" 
+// let backendUrl = "https://ecommerce-dxp5.onrender.com/api";
+let backendUrl = "http://localhost:8000/api"
 
 
 
@@ -59,3 +59,52 @@ document.querySelector(".nav_searchIcon").addEventListener("click",()=>{
 document.querySelector(".closeModalButton").addEventListener("click",()=>{
     document.querySelector(".searchModal").style.display="none"
 })
+const fetchTopSellingProopducts=async()=>{
+
+            // topSelling
+
+             try {
+            const {data,status} =  await axios.get(`${backendUrl}/product/topSelling`)
+            data.message.forEach((product)=>{
+
+                const productCardHtml = document.createElement("div");
+                productCardHtml.classList.add("newProducts_card");
+                productCardHtml.addEventListener("click",()=>{
+                    location.href=  `${frontendUrl}/public/html/productDetail.html?productId=${product._id}`
+                })
+                productCardHtml.innerHTML = `
+                <p class="newProducts_stockInfo_para">✅ in stock</p>
+                <div class="newProducts_imgWrapper">
+                <img class="newProducts_Img" src=${product.image[0]}>
+                </div>
+                <div class="newProduct_review_box">
+                Reviews
+                </div>
+                <div class="newProduct_details">
+                <p>${product.name}</p>
+                <p class="productDesc">${product.desc}</p>
+            
+                </div>
+                <div class="newProduct_priceBox">
+                <h2 class="newProduct_price">$${product.price}</h2>
+                </div>
+                `
+                const addToCartButton = document.createElement("button");
+                addToCartButton.className = "addToCart_btn";
+                addToCartButton.innerHTML = `
+                    <img src="./public/icons/cartIconBLue.png" alt="cart">
+                    <p>Add to Cart</p>
+                `;
+
+                addToCartButton.addEventListener("click",(e)=>handleAddToCart(e,product))
+                productCardHtml.append(addToCartButton)
+                document.querySelector("#topSellingWrapper").appendChild(productCardHtml);
+                
+            })
+    } catch (error) {
+        
+    }
+
+
+   
+}

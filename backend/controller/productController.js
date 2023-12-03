@@ -149,7 +149,6 @@ const getCategory=async(req,res,next)=>{
 const findProducts=async(req,res,next)=>{
   const {min,max,category} = req.query;
   let products ;
-  console.log(category,min)
   try {
 
   if(category && !Number(min)){
@@ -179,7 +178,17 @@ const findProducts=async(req,res,next)=>{
   }
 }
 
+
+const getBestSellingsProduct=async(req,res,next)=>{
+  try {
+    const topProducts  = await productModel.find({});
+    res.status(200).json({message:topProducts,success:true});
+  } catch (error) {
+    res.status(500).json({message:error.message,success:false})  }
+}
+
 module.exports = {
+  getBestSellingsProduct,
   getProduct,
   createProduct,
   getAppStats,

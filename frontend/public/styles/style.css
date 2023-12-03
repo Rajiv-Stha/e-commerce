@@ -211,7 +211,7 @@ hr {
 .newProducts_card {
   display: flex;
   flex-direction: column;
-  width: 220px;
+  width: 250px;
   height: fit-content;
   text-decoration: none !important;
   justify-content: center;
@@ -259,6 +259,9 @@ hr {
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .newProduct_delPrice {
@@ -267,8 +270,10 @@ hr {
 }
 
 .newProduct_price {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+
 }
 .productName{
 
@@ -689,9 +694,13 @@ hr {
 .categorySection {
   margin: auto;
   border-bottom: 1px solid rgba(218, 218, 218, 0.405);
-  height: 400px;
-  margin-top: 4rem;
+  min-height: 400px;
+  
+  margin-top: 2rem;
   width: 100%;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 .categoryWrapper {
@@ -840,6 +849,10 @@ hr {
 
   .newProduct_details {
     font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: red;
   }
 
   .newProduct_price {

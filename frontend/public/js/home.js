@@ -17,12 +17,11 @@ const fetchAllProducts =async()=>{
                 <img class="newProducts_Img" src=${product.image[0]}>
                 </div>
                 <div class="newProduct_review_box">
-                Reviews
                 </div>
                 <div class="newProduct_details">
                 <p>${product.name}</p>
-                <p>${product.desc}</p>
-                <p>All-In-One</p>
+                <p class="productDesc">${product.desc}</p>
+               
                 </div>
                 <div class="newProduct_priceBox">
                 <h2 class="newProduct_price">$${product.price}</h2>
@@ -198,8 +197,8 @@ const FetchAllDesktops=async()=>{
                 </div>
                 <div class="newProduct_details">
                 <p>${product.name}</p>
-                <p>${product.desc}</p>
-                <p>All-In-One</p>
+                <p class="productDesc">${product.desc}</p>
+
                 </div>
                 <div class="newProduct_priceBox">
                 <h2 class="newProduct_price">$${product.price}</h2>
@@ -227,6 +226,8 @@ const FetchAllDesktops=async()=>{
     }
 
 }
+
+fetchTopSellingProopducts()
 FetchAllDesktops()
 FetchAllLaptops()
 FetchAllMonitors()
