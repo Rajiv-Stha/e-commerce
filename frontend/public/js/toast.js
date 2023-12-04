@@ -1,7 +1,7 @@
 let showToast = async (type, message) => {
     if (type === "error") {
-      toastr.error(message);
+      toast.error(message);
     } else {
-      toastr.success(message);
+      toast.success(message);
     }
   };

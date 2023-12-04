@@ -1,3 +1,4 @@
+
 const displayAllCarts =()=>{
     let totalAmount = 0 ;
      document.querySelector(".shoppingCartProductList").innerHTML  = ""
@@ -39,7 +40,7 @@ const displayAllCarts =()=>{
         }
 
         localStorage.setItem("shippingDetails",JSON.stringify(shippingPayload));
-        
+
 
      }
 

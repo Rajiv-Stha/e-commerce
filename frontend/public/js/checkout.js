@@ -1,9 +1,12 @@
+let shippingDetails  = localStorage.getItem("shippingDetails") ?? {}
+if(shippingDetails){
+    shippingDetails = JSON.parse(shippingDetails)
+}
 
 
-console.log(shippingDetails)
 const displayCarItem=()=>{
     const cart = getCartItems();
-    const shippingDetails = JSON.parse (localStorage.getItem("shippingDetails"))
+    const user = fetchLoggedInUser()
     let totalAmount = 0;
 
     cart.forEach(c=>{
@@ -15,6 +18,7 @@ const displayCarItem=()=>{
                             </div>  
         `
     })
+    document.querySelector(".username").innerText = user.username
     document.querySelector(".summarySubTotalAmount").innerText = `$${totalAmount}`;
     document.querySelector(".number").innerText = shippingDetails.number
     document.querySelector(".address").innerText = shippingDetails.address
@@ -24,30 +28,46 @@ const displayCarItem=()=>{
 displayCarItem()
 
 
-const handleBuyclick=(e)=>{
+const handleBuyclick=async(e)=>{
     e.preventDefault()
-
 
     let user = fetchLoggedInUser()
 
     if(!user){
-        alert(" you  need to login first ")
+        alert("You need to login first ")
         return;
     }
-    location.href = `${frontendUrl}/public/html/checkout.html`
      const cart = getCartItems()
 
     let orderPayload = {
         totalPrice :0,
-        address:shippingDetails.address,
-        number:shippingDetails.number,
+        ...shippingDetails,
+        buyer:user._id
     }
 
     if(cart.length>0){
       orderPayload.item= cart.map((p)=>{
       orderPayload.totalPrice+= Number(p.price) * Number(p.cartQuantity);
-      return { buyQuantity: p.cartQuantity  ,  product  : p._id }
+      return {  buyQuantity: p.cartQuantity  ,  product  : p._id }
     })
+
+    console.log(orderPayload)
+    try {
+        const {status} = await axios.post(`${backendUrl}/order/create`, orderPayload);
+        if(status===200){
+            showToast("success", "Product bought successfully");
+            removeAllCart()
+            displayAllCarts()
+            displayCartCount()
+            setTimeout(()=>{
+                location.href=`${frontendUrl}/public/html/myDashboard.html?order=true`
+            },2000)
+        }
+    } catch (error) {
+        console.log(error)
+    }
  
 }
 }
+document.querySelector(".buyButton").addEventListener("click",handleBuyclick)
+
