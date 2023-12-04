@@ -28,32 +28,34 @@ const displayAllCarts =()=>{
 const handleBuyclick=(e)=>{
     e.preventDefault()
 
+
     let user = fetchLoggedInUser()
 
     if(!user){
         alert(" you  need to login first ")
         return;
     }
-    const cart = getCartItems()
+    location.href = `${frontendUrl}/public/html/checkout.html`
+    // const cart = getCartItems()
 
-    let orderPayload = {
-        totalPrice :0,
-    }
-    if(cart.length>0){
+    // let orderPayload = {
+    //     totalPrice :0,
+    // }
+    // if(cart.length>0){
 
-    orderPayload.item= cart.map((p)=>{
-      orderPayload.totalPrice+= Number(p.price) * Number(p.cartQuantity);
-      return { buyQuantity: p.cartQuantity  ,  product  : p._id }
-    })
-       const buyPayload={
-        ...orderPayload,
-      buyer:user._id,
-      address:document.querySelector("#shipping_address_input").value,
-      number:document.querySelector("#shipping_phone_input").value,
-    }
+    // orderPayload.item= cart.map((p)=>{
+    //   orderPayload.totalPrice+= Number(p.price) * Number(p.cartQuantity);
+    //   return { buyQuantity: p.cartQuantity  ,  product  : p._id }
+    // })
+    //    const buyPayload={
+    //     ...orderPayload,
+    //   buyer:user._id,
+    //   address:document.querySelector("#shipping_address_input").value,
+    //   number:document.querySelector("#shipping_phone_input").value,
+    // }
 
-    buyProduct(buyPayload)
-    }
+    // buyProduct(buyPayload)
+    // }
 }
 const buyProduct=async(buyPayload)=>{
 

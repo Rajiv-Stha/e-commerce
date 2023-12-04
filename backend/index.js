@@ -2,9 +2,7 @@ const express = require("express");
 const app = express();
 const morgan = require("morgan");
 app.use(express.json());
-
 require("dotenv").config();
-// console.log(process.env.MONGO_URI);
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
 const session = require("express-session");
