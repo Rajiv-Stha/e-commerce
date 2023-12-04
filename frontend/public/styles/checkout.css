@@ -52,7 +52,7 @@
         overflow: hidden;
         text-overflow: clip;
         font-size: 14px;
-        color: black;
+        color:#000000b8;
 }
 .boldText{
     font-weight: 600;
@@ -76,7 +76,8 @@
     display: flex   ;
     flex-direction: column;
     gap: 8px;
-    color:rgb(99,95,95);
+    padding: 0 5px;
+    color:#000000b8;
 }
 
 .itemDetails{
@@ -88,7 +89,7 @@
 
 .shippingItem {
     font-size: 15px;
-    color: black;
+    color: #000000b8;
 }
 .headerBox{
     height: 55px;
@@ -102,6 +103,7 @@
     color: #ffffff;
     font-size: 14px;
     letter-spacing: 1px;
+    margin-bottom: 1rem;
 }
 .productCount{
     width: 25px;
@@ -115,5 +117,11 @@
 }
 .totalPrice{
     padding: 0 6px;
+    margin: 5px 0 ;
     color: #0156FF;
+}
+.productsDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }

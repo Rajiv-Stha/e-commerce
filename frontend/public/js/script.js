@@ -2,7 +2,7 @@
 // let frontendUrl = "https://miralimammad.netlify.app";
 let frontendUrl = "http://localhost:5500/frontend" 
 // let backendUrl = "https://ecommerce-dxp5.onrender.com/api";
-let backendUrl = "http://localhost:8000/api"
+let backendUrl = "http://localhost:8000/api";
 
 
 
@@ -26,14 +26,14 @@ const displayLoginUser=()=>{
         document.querySelector(".userImg").style.display = "block"
         document.querySelector(".userImg").src =user.image;
     }else{
-document.querySelector(".navbar_loginBtn").style.display="block"
+        document.querySelector(".navbar_loginBtn").style.display="block"
         document.querySelector(".userImg").style.display = "none"
     }
 }
 displayLoginUser()
 displayCartCount()
 
-document.querySelector(".searchModalInput").addEventListener("change",async(e)=>{
+document.querySelector(".searchModalInput")?.addEventListener("change",async(e)=>{
     const {data,status} = await  axios.get(`${backendUrl}/product/search?search_query=${e.target.value}`)
       document.querySelector(".modalSearchItemWrapper").innerHTML = ""
     data.message.forEach((p)=>{
@@ -53,10 +53,10 @@ document.querySelector(".searchModalInput").addEventListener("change",async(e)=>
 
 })
 
-document.querySelector(".nav_searchIcon").addEventListener("click",()=>{
+document.querySelector(".nav_searchIcon")?.addEventListener("click",()=>{
     document.querySelector(".searchModal").style.display="flex"
 })
-document.querySelector(".closeModalButton").addEventListener("click",()=>{
+document.querySelector(".closeModalButton")?.addEventListener("click",()=>{
     document.querySelector(".searchModal").style.display="none"
 })
 const fetchTopSellingProopducts=async()=>{
