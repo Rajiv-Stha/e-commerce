@@ -1310,6 +1310,10 @@ font-size: 12px;
 }
 .footer_items_box {
   gap: 8px;
+  flex-direction: column;
+  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1.2rem;
 }
 .footer_payment_img {
   width: 30px;
