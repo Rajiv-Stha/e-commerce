@@ -1,4 +1,4 @@
-
+let isDrawerOpen = false;
 // let frontendUrl = "https://miralimammad.netlify.app";
 let frontendUrl = "http://localhost:5500/frontend" 
 // let backendUrl = "https://ecommerce-dxp5.onrender.com/api";
@@ -30,6 +30,7 @@ const displayLoginUser=()=>{
         document.querySelector(".userImg").style.display = "none"
     }
 }
+
 displayLoginUser()
 displayCartCount()
 
@@ -52,7 +53,11 @@ document.querySelector(".searchModalInput")?.addEventListener("change",async(e)=
     })
 
 })
+document.querySelector(".nav_searchIconDrawer").addEventListener("click",()=>{
+    document.querySelector(".drawer").style.width="0%";
+    document.querySelector(".searchModal").style.display="flex";
 
+})
 document.querySelector(".nav_searchIcon")?.addEventListener("click",()=>{
     document.querySelector(".searchModal").style.display="flex"
 })
@@ -108,3 +113,18 @@ const fetchTopSellingProopducts=async()=>{
 
    
 }
+document.querySelector(".navMenuIcon").addEventListener("click",()=>{
+    if(isDrawerOpen){
+        document.querySelector(".drawer").style.width="0%";
+        isDrawerOpen = false;
+        document.querySelector(".navMenuIcon").src="https://img.icons8.com/ios-filled/50/menu--v6.png"
+    }else{
+        isDrawerOpen=true
+        document.querySelector(".navMenuIcon").src= "https://img.icons8.com/hatch/64/delete-sign.png"
+        document.querySelector(".drawer").style.width="80%";
+    }
+})
+document.querySelector(".closeDrawer").addEventListener("click",()=>{
+    
+    document.querySelector(".drawer").style.width="0%";
+})

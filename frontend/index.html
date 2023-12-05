@@ -11,16 +11,14 @@
         <script defer src="./public/js/methods.js"></script>
         <script defer src="./public/js/script.js"></script>
         <script defer src="./public/js/home.js"></script>
-
 </head>
 <body>
     <div class="app_container">
         <div id="topNav">
             <div class="topNavContent">
-
                 <div class="topNavLeft">
-                    <p> <span>
-                        
+                    <p> 
+                        <span>
                         Mon-Thu:
                     </span>
                     9:00AM - 5:30PM</p>
@@ -50,7 +48,7 @@
                     </ul>
                 </div>
                 <div class="navbarRight">
-                    <img src="./public/icons/searchIcon.png" alt="searchIcon" class="nav_searchIcon">
+                        <img src="./public/icons/searchIcon.png" alt="searchIcon" class="nav_searchIcon">
                     <a href="./public/html/shoppingCart.html" class="cartBox">
                         <img src="./public/icons/cartIcon.png" alt="cartIcon" class="nav_cartIcon">
                         <p class="cartCount"></p>
@@ -64,9 +62,42 @@
                         <button class="navbar_loginBtn">Log In</button>
                     </a>
                 </div>
+                <img class="navMenuIcon" width="30" height="30" src="https://img.icons8.com/ios-filled/50/menu--v6.png" alt="menu--v6" />
             </div>
         </div>
         <hr/>
+        <!-- drawer  start -->
+        <div class="drawer">
+           
+            <a class="drawer_item" href="./public/html/allProducts.html?category=gaming" >
+                <p>Gaming</p>
+            </a>
+            <a class="drawer_item" href="./public/html/allProducts.html?category=computer" >
+                <p>Computer</p>
+            </a>
+            
+            <a class="drawer_item" href="./public/html/aboutUs.html" >
+                <p>About Us</p>
+            </a>
+            <a class="drawer_item"  href="./public/html/shoppingCart.html">
+                <p>Cart</p>
+            </a>
+            <div class="drawer_item nav_searchIconDrawer">
+                <p>Search</p>
+            </div>
+            <a class="drawer_item" href="./public/html/termsAndCondition.html" >
+                <p>Terms And Conditions</p>
+            </a>
+            <a class="drawer_item" href="./public/html/myDashboard.html">
+                <p>Profile</p>
+            </a>
+            <div class="drawer_item closeDrawer">
+                <p>Close</p>
+            </div>
+
+        </div>
+
+        <!-- drawer end -->
 
         <div style="display: none;" class="searchModal">
             <div class="modalContent">

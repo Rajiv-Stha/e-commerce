@@ -22,11 +22,9 @@ const displayCarItem=()=>{
     document.querySelector(".summarySubTotalAmount").innerText = `$${totalAmount}`;
     document.querySelector(".number").innerText = shippingDetails.number
     document.querySelector(".address").innerText = shippingDetails.address
-
 }
 
 displayCarItem()
-
 
 const handleBuyclick=async(e)=>{
     e.preventDefault()
@@ -53,12 +51,14 @@ const handleBuyclick=async(e)=>{
 
     console.log(orderPayload)
     try {
-        const {status} = await axios.post(`${backendUrl}/order/create`, orderPayload);
-        if(status===200){
+        const {status,data} = await axios.post(`${backendUrl}/order/create`, orderPayload);
+
+        console.log("done",data,status)
+
+        if(status === 200){
             showToast("success", "Product bought successfully");
             removeAllCart()
-            displayAllCarts()
-            displayCartCount()
+            displayCarItem()
             setTimeout(()=>{
                 location.href=`${frontendUrl}/public/html/myDashboard.html?order=true`
             },2000)
