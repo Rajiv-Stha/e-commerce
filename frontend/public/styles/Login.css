@@ -144,9 +144,138 @@
 @media only screen and (min-width: 769px) and (max-width: 992px){
 
     .login_headingText {
-        font-size: 27px;
+        font-size: 25px;
     }
     .login_box_wrapper {
         flex-direction: column;
     }
+}
+@media screen and (min-width:600px) and (max-width:768px){
+      .login_headingText {
+        font-size: 20px;
+    }
+    .login_box_wrapper {
+        flex-direction: column;
+    }
+    .login_left_content h2 {
+    font-size: 15px;
+}
+.login_left_content p {
+    font-size: 12px;
+}
+.login_wrapper label {
+    font-size: 12px;
+}
+.login_wrapper input {
+    font-size: 11px;
+    height: 40px;
+}
+.login_btn {
+    width: 120px;
+    height: 40px;
+   
+}
+.login_right_content h2 {
+    font-size: 15px;
+}
+.login_right_content p, .login_right_content li {
+    font-size: 12px;
+}
+.create_acc_link {
+  
+    width: 180px;
+    height: 40px;
+    font-size: 12px;
+}
+}
+@media screen and (min-width:480px) and (max-width:599px){
+
+    .login_headingText {
+        font-size: 16px;
+    }
+    .login_box_wrapper {
+        flex-direction: column;
+    }
+    .login_left_content h2 {
+    font-size: 13px;
+}
+.login_left_content p {
+    font-size: 11px;
+}
+.login_wrapper label {
+    font-size: 11px;
+}
+.login_wrapper input {
+    font-size: 10px;
+    height: 35px;
+}
+.login_btn {
+    width: 105px;
+    height: 35px;
+    font-size: 12px;
+   
+}
+.login_right_content h2 {
+    font-size: 14px;
+}
+.login_right_content p, .login_right_content li {
+    font-size: 11px;
+}
+.create_acc_link {
+  
+    width: 180px;
+    height: 35px;
+    font-size: 12px;
+}
+
+}
+
+@media screen  and (max-width:480px){
+
+    .login_innerContent {
+    
+    width: 85%;
+}
+.login_navigation {
+    font-size: 10px;
+}
+    .login_headingText {
+        font-size: 15px;
+    }
+    .login_box_wrapper {
+        flex-direction: column;
+    }
+    .login_left_content h2 {
+    font-size: 12px;
+}
+.login_left_content p {
+    font-size: 10px;
+}
+.login_wrapper label {
+    font-size: 10px;
+}
+.login_wrapper input {
+    font-size: 9px;
+    height: 35px;
+}
+.login_btn {
+    width: 90px;
+    height: 35px;
+    font-size: 10px;
+   
+}
+.login_right_content h2 {
+    font-size: 13px;
+}
+.login_right_content p, .login_right_content li {
+    font-size: 10px;
+}
+.create_acc_link {
+  
+    width: 140px;
+    height: 35px;
+    font-size: 10px;
+}
+
+
 }
