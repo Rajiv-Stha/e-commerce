@@ -180,6 +180,39 @@
        
     }
 
+}
 
+@media screen  and (max-width:480px){
+    .signUp_innerContent {
+    width: 80%;
+}
+        .SignUp_headingText {
+        font-size: 15px;
+    }
+    .SignUp_navigation {
+    font-size: 10px;
+}
+    .signup_form {
+        width: 100%;
+    }
+    .signup_form h2 {
+        font-size: 14px;
+    }
+    .signin_select {
+    font-size: 10px;
+}
+    .signup_wrapper label {
+        font-size: 10px;
+    }
+    .signup_wrapper input {
+        font-size: 9px;;
+        height: 33px;
+    }
+    .signup_btn {
+         width: 80px;
+        height: 30px;
+        font-size: 10px !important;
+       
+    }
 
 }
