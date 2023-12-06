@@ -61,6 +61,9 @@ fetchAllProducts()
 
 
 const handleAddToCart=(event,product) =>{
+    if(fetchLoggedInUser()){
+        
+    }
     event.stopPropagation()
     let cartData = {...product,cartQuantity:1}
     addToCart(cartData);

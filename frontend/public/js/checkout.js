@@ -60,7 +60,7 @@ const handleBuyclick=async(e)=>{
             removeAllCart()
             displayCarItem()
             setTimeout(()=>{
-                location.href=`${frontendUrl}/public/html/myDashboard.html?order=true`
+                location.href=`${frontendUrl}/public/html/successfull.html`
             },2000)
         }
     } catch (error) {

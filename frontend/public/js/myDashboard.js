@@ -19,6 +19,7 @@ const displayUserInfo=()=>{
 }
 const handleLogout=()=>{
     removeUserFromLs()
+    displayCartItems()
     location.href=frontendUrl;
 }
 const handleUpdateUser=async()=>{

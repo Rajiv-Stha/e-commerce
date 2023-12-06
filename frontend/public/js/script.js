@@ -30,9 +30,13 @@ const displayLoginUser=()=>{
         document.querySelector(".userImg").style.display = "none"
     }
 }
-
+const displayCartItems=()=>{
+    document.querySelector(".cartBox").style.display="none"
+}
 displayLoginUser()
 displayCartCount()
+displayCartItems()
+
 
 document.querySelector(".searchModalInput")?.addEventListener("change",async(e)=>{
     const {data,status} = await  axios.get(`${backendUrl}/product/search?search_query=${e.target.value}`)
