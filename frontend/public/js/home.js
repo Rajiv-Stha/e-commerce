@@ -61,10 +61,12 @@ fetchAllProducts()
 
 
 const handleAddToCart=(event,product) =>{
-    if(fetchLoggedInUser()){
-        
-    }
     event.stopPropagation()
+    if(!fetchLoggedInUser()){
+
+        showToast("error","You need to login to add to cart")
+        return 
+    }
     let cartData = {...product,cartQuantity:1}
     addToCart(cartData);
     displayCartCount()

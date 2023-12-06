@@ -89,6 +89,10 @@ const handleDetailsTab=()=>{
 
 
 const handleAddToCart=()=>{
+  if(!fetchLoggedInUser()){
+    showToast("error","You must be logged in")
+    return;
+  }
   const cartQuantity = document.querySelector(".addToCartQuantityInput").value
   const cartDatat = {...productData,cartQuantity:Number(cartQuantity)}
   addToCart(cartDatat);
