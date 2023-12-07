@@ -248,3 +248,18 @@
     height: 100%;
     object-fit: cover;
   }
+
+  /* media query  */
+
+  @media only screen and (min-width: 769px) and (max-width: 992px) {
+
+    .left_productDetail_innerWrapper{
+        width: 75%;
+    }
+    .left_productDetail_wrapper{
+        flex: 7 !important;
+    }
+    .right_productDetail_banner_content{
+        flex: 5 !important;
+    }
+  }

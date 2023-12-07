@@ -150,3 +150,31 @@
     outline: none;
     cursor: pointer;
 }
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .contactUs_headingText {
+    font-size: 26px;
+}
+.contactUs_text p {
+  font-size: 14px;
+}
+.contactUs_left_content {
+  flex: 7;
+}
+.contactUs_right_content {
+  flex: 5;
+}
+.contactUs_detail_box {
+  padding: 3rem 1rem;
+}
+.contactUs_detail_left img {
+  width: 30px;
+  height: 30px;
+}
+.contactUs_detail_right h2 {
+  font-size: 16px;
+}
+.contactUs_detail_right p {
+  font-size: 11px;
+}
+}
