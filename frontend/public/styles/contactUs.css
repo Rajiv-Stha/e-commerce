@@ -161,6 +161,11 @@
 .contactUs_left_content {
   flex: 7;
 }
+.contactUs_submitBtn {
+  background-color: #0156FF;
+  width: 120px;
+  height: 45px;
+}
 .contactUs_right_content {
   flex: 5;
 }
