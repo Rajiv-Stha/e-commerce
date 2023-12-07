@@ -31,7 +31,7 @@ const displayLoginUser=()=>{
     }
 }
 const displayCartItems=()=>{
-    document.querySelector(".cartBox").style.display="none"
+    document.querySelector(".cartCount").style.display="none"
 }
 displayLoginUser()
 displayCartCount()
