@@ -31,7 +31,9 @@ const displayLoginUser=()=>{
     }
 }
 const displayCartItems=()=>{
-    document.querySelector(".cartCount").style.display="none"
+    if(!fetchLoggedInUser()){
+        document.querySelector(".cartCount").style.display="none"
+    }
 }
 displayLoginUser()
 displayCartCount()
@@ -101,7 +103,7 @@ const fetchTopSellingProopducts=async()=>{
                 const addToCartButton = document.createElement("button");
                 addToCartButton.className = "addToCart_btn";
                 addToCartButton.innerHTML = `
-                    <img src="./public/icons/cartIconBLue.png" alt="cart">
+                   <img width="20" height="20" src="https://img.icons8.com/ios/50/shopping-cart--v1.png" alt="shopping-cart--v1"/>
                     <p>Add to Cart</p>
                 `;
 

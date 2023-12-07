@@ -169,7 +169,24 @@ hr {
   font-size: 11px;
   cursor: pointer;
   outline: none;
+}
 
+.seeAllButton{
+  height: 45px;
+  padding: 0 1rem;
+  background-color: #0156FF;
+  display: flex;
+  align-items:  center;
+  border-radius: 5px;
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+  width: fit-content;
+}
+.categoryLeft{
+ display: flex;
+ gap: 1rem;
+ flex-direction: column;
 }
 
 /* heroSection stylying  */
@@ -282,9 +299,7 @@ hr {
   color: black;
 
 }
-.productName{
 
-}
 .productDesc{
   color: gray;
 }
@@ -752,8 +767,8 @@ hr {
 
 .categoryHeaer {
   display: flex;
-  flex-direction: column;
   gap: 1rem;
+  justify-content: space-between;
 }
 
 .topicTop {
