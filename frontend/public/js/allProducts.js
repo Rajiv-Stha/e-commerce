@@ -41,7 +41,7 @@ const fetchAllCategory=async()=>{
 }
 const bannerImageMapping={
     phone:"../images/mobile.jpeg",
-    smartwatch:"../images/watch.jpeg",
+    watch:"../images/watch.jpeg",
     headphone:"../images/headphone.jpeg",
     gaming:"../images/gaming.avif",
     computer:"../images/computer.jpg",
