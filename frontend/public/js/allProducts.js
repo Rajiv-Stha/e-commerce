@@ -56,12 +56,14 @@ const fetchDataWithFilter=async()=>{
 
             const productCardHtml = document.createElement("div");
                 productCardHtml.classList.add("newProducts_card");
+
                 productCardHtml.addEventListener("click",()=>{
                     location.href=  `${frontendUrl}/public/html/productDetail.html?productId=${product._id}`
                 })
 
+
                 productCardHtml.innerHTML = `
-                <p class="newProducts_stockInfo_para">✅ in stock</p>
+                <p class="newProducts_stockInfo_para"> ✅ in stock</p>
                 <div class="newProducts_imgWrapper">
                 <img class="newProducts_Img" src=${product.image[0]}>
                 </div>
@@ -76,13 +78,13 @@ const fetchDataWithFilter=async()=>{
                 <h2 class="newProduct_price">$${product.price}</h2>
                 </div>
                 `
+
                 const addToCartButton = document.createElement("button");
                 addToCartButton.className = "addToCart_btn";
                 addToCartButton.innerHTML = `
-                    <img src="../icons/cartIconBLue.png" alt="cart">
-                    <p>Add to Cart</p>
+                   <img src="../icons/cartIconBLue.png" alt="cart">
+                   <p>Add to Cart</p>
                 `;
-
                 addToCartButton.addEventListener("click",(e)=>handleAddToCart(e,product))
                 productCardHtml.append(addToCartButton)
 
@@ -98,6 +100,7 @@ const fetchDataWithFilter=async()=>{
         console.log(error)
   }
 }
+
 // const searchProductInAllProducts =async()=>{
 //     try {
 //       const {data,status} = await  axios.get(`${backendUrl}/product/search?search_query=${searchQuery}`)
