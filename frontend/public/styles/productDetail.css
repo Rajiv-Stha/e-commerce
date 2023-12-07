@@ -262,4 +262,208 @@
     .right_productDetail_banner_content{
         flex: 5 !important;
     }
+    .productDetail_list_header li a {
+        font-size: 11px;
+    }
+    .productDetail_header_right p {
+        font-size: 12px;
+    }
+    .productDetail_navigation {
+        font-size: 11px;
+    }
+    
+    .addToCard_button_product {
+        width: 110px;
+        height: 40px;
+        font-size: 12px;
+    }
+    .paypal_product_payment {
+        width: 110px;
+        height: 40px;
+        font-size: 12px;
+    }
+    .paypal_product_payment img{
+        width: 18px;
+        height: 18px;
+    }
+    .product-name {
+        font-size: 22px !important;
+    }
+    .review_req_para {
+        font-size: 10px;
+    }
+    .product-detail-info {
+        font-size: 13px;
+    }
+    .anyQuery_wrapper p {
+        font-size: 11px;
+    }
+    .product_moreInformation {
+        font-size: 11px;
+    }
+  }
+
+  @media screen and (min-width:600px) and (max-width:768px){
+
+    .productDetail_wrapper {
+        flex-direction: column-reverse;
+    }
+    .productDetail_list_header li a {
+        font-size: 10px;
+    }
+    .productDetail_header_right p {
+        font-size: 11px;
+    }
+    .productDetail_navigation {
+        font-size: 10px;
+    }
+    .productDetail_list_header {
+        gap: 1rem;
+    }
+    .productDetail_header_right input {
+        width: 50px;
+        height: 35px;
+    }
+    .addToCard_button_product {
+        width: 75px;
+        height: 35px;
+        font-size: 9px;
+    }
+    .paypal_product_payment {
+        width: 85px;
+        height: 35px;
+        font-size: 9px !important;
+    }
+    .paypal_product_payment img{
+        width: 14px;
+        height: 14px;
+    }
+  }
+
+ @media screen and (min-width:480px) and (max-width:599px){
+    .productDetail_wrapper {
+        flex-direction: column-reverse;
+    }
+    .productDetail_header_right {
+        gap: 2px;
+    }
+    .productDetail_list_header li a {
+        font-size: 9px;
+    }
+    .productDetail_header_right p {
+        font-size: 10px;
+    }
+    .productDetail_navigation {
+        font-size: 9px;
+    }
+    .productDetail_list_header {
+        gap: 1rem;
+    }
+    .productDetail_header_right input {
+        width: 45px;
+        height: 33px;
+    }
+    .addToCard_button_product {
+        width: 80px;
+        height: 35px;
+        font-size: 8px;
+    }
+    .paypal_product_payment {
+        width: 85px;
+        height: 35px;
+        font-size: 8px !important;
+        gap: 5px;
+    }
+    .paypal_product_payment img{
+        width: 13px;
+        height: 13px;
+    }
+    .swiper-slide img {
+        width: 75%;
+    }
+    .left_productDetail_innerWrapper {
+        width: 80%;
+    }
+    .product-name {
+        font-size: 20px !important;
+    }
+    .review_req_para {
+        font-size: 10px;
+    }
+    .product-detail-info {
+        font-size: 13px;
+    }
+    .prodouctDetail_feature_banner img {
+        height: 80%;
+    }
+  }
+
+  @media screen  and (max-width:480px){
+    .productDetail_header {
+        width: 90%;
+    }
+    .productDetail_product_imgWrapper_btns img{
+        width: 22px;
+    }
+
+    .productDetail_wrapper {
+        flex-direction: column-reverse;
+    }
+    .productDetail_header_right {
+        gap: 2px;
+    }
+    .productDetail_list_header li a {
+        font-size: 9px;
+    }
+    .productDetail_header_right p {
+        font-size: 9px;
+    }
+    .productDetail_navigation {
+        font-size: 9px;
+    }
+    .productDetail_list_header {
+        gap: 1rem;
+    }
+    .productDetail_header_right input {
+        width: 30px;
+        height: 33px;
+    }
+    .addToCard_button_product {
+        width: 80px;
+        height: 35px;
+        font-size: 8px;
+    }
+    .paypal_product_payment {
+        /* width: 85px;
+        height: 35px;
+        font-size: 8px !important;
+        gap: 5px; */
+        display: none;
+    }
+   
+    .swiper-slide img {
+        width: 75%;
+    }
+    .left_productDetail_innerWrapper {
+        width: 90%;
+    }
+    .product-name {
+        font-size: 14px !important;
+    }
+    .review_req_para {
+        font-size: 9px;
+    }
+    .product-detail-info {
+        font-size: 11px;
+    }
+    .prodouctDetail_feature_banner img {
+        height: 80%;
+    }
+    .anyQuery_wrapper p {
+        font-size: 11px;
+    }
+    .product_moreInformation {
+        font-size: 11px;
+    }
+
   }
