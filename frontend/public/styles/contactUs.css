@@ -183,3 +183,176 @@
   font-size: 11px;
 }
 }
+
+
+@media screen and (min-width:600px) and (max-width:768px) {
+
+  .contactUs_headingText {
+    font-size: 25px;
+}
+.contactUs_text p {
+  font-size: 12px;
+}
+.contactUs_left_content {
+  flex: 7;
+}
+.contactUs_submitBtn {
+  background-color: #0156FF;
+  width: 85px;
+  height: 40px;
+  font-size: 12px;
+}
+.contactUs_userDetail {
+  flex-direction: column;
+}
+#contactUs_phone {
+  width: 100%;
+}
+.contactUs_userInfo input{
+height: 40px;
+}
+.contactUs_form label {
+  font-size: 12px;
+}
+.contactUs_textArea_wrapper textarea {
+  
+  height: 100px;
+  font-size: 11px;
+}
+.contactUs_right_content {
+  flex: 5;
+}
+.contactUs_detail_box {
+  padding: 3rem 1rem;
+}
+.contactUs_detail_left img {
+  width: 25px;
+  height: 25px;
+}
+.contactUs_detail_right h2 {
+  font-size: 14px;
+}
+.contactUs_detail_right p {
+  font-size: 9px;
+}
+}
+
+@media screen and (min-width:480px) and (max-width:599px){
+  .contactUs_innerContent {
+    flex-direction: column-reverse;
+}
+.contactUs_navigation {
+  font-size: 11px;
+  position: absolute;
+  top: 4rem;
+}
+.contactUs_headingText {
+  font-size: 22px;
+}
+.contactUs_text p {
+font-size: 11px;
+}
+.contactUs_left_content {
+flex: 7;
+}
+.contactUs_submitBtn {
+background-color: #0156FF;
+width: 85px;
+height: 40px;
+font-size: 12px;
+}
+.contactUs_userDetail {
+flex-direction: column;
+}
+#contactUs_phone {
+width: 100%;
+}
+.contactUs_userInfo input{
+height: 40px;
+font-size: 11px;
+}
+.contactUs_form label {
+font-size: 11px;
+}
+.contactUs_textArea_wrapper textarea {
+
+height: 100px;
+font-size: 10px;
+}
+.contactUs_right_content {
+flex: 5;
+}
+.contactUs_detail_box {
+padding: 2rem 1rem;
+}
+.contactUs_detail_left img {
+width: 20px;
+height: 20px;
+}
+.contactUs_detail_right h2 {
+font-size: 13px;
+}
+.contactUs_detail_right p {
+font-size: 9px;
+}
+}
+
+@media screen  and (max-width:480px){
+  
+  .contactUs_innerContent {
+    flex-direction: column-reverse;
+}
+.contactUs_navigation {
+  font-size: 11px;
+  position: absolute;
+  top: 4rem;
+}
+.contactUs_headingText {
+  font-size: 22px;
+}
+.contactUs_text p {
+font-size: 11px;
+}
+.contactUs_left_content {
+flex: 7;
+}
+.contactUs_submitBtn {
+  width: 75px;
+  height: 37px;
+  font-size: 11px;
+}
+.contactUs_userDetail {
+flex-direction: column;
+}
+#contactUs_phone {
+width: 100%;
+}
+.contactUs_userInfo input{
+height: 40px;
+font-size: 11px;
+}
+.contactUs_form label {
+font-size: 11px;
+}
+.contactUs_textArea_wrapper textarea {
+
+height: 100px;
+font-size: 10px;
+}
+.contactUs_right_content {
+flex: 5;
+}
+.contactUs_detail_box {
+padding: 2rem 1rem;
+}
+.contactUs_detail_left img {
+width: 20px;
+height: 20px;
+}
+.contactUs_detail_right h2 {
+font-size: 13px;
+}
+.contactUs_detail_right p {
+font-size: 9px;
+}
+}
