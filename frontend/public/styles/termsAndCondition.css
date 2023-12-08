@@ -73,3 +73,81 @@
     gap: 10px;
     font-size: 12px;
 }
+
+/* media query  */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .termsAndCondition_leftInnerContent {
+      flex: 8;
+    }
+    .termsAndCondition_RightInnerContent {
+        flex: 4;
+    }
+    #termsAndCondition_header {
+        font-size: 22px;
+    }
+    #general_terms_header {
+        font-size: 15px;
+    }
+    .termsAndCondition_section {
+        font-size: 12px;
+    }
+}
+@media screen and (min-width:600px) and (max-width:768px){
+    .FAQ_section {
+        flex-direction: column-reverse;
+    }
+    #termsAndCondition_header {
+        font-size: 18px;
+    }
+    #general_terms_header {
+        font-size: 13px;
+    }
+    .termsAndCondition_section {
+        font-size: 11px;
+    }
+    .definitionAndInterpretation_lists {
+        font-size: 11px;
+    }
+}
+@media screen and (min-width:480px) and (max-width:599px){
+    .termsAndContion_navigation {
+        font-size: 11px;
+    }
+    .FAQ_section {
+        flex-direction: column-reverse;
+    }
+    #termsAndCondition_header {
+        font-size: 17px;
+    }
+    #general_terms_header {
+        font-size: 13px;
+    }
+    .termsAndCondition_section {
+        font-size: 11px;
+    }
+    .definitionAndInterpretation_lists {
+        font-size: 11px;
+    }
+}
+
+@media screen  and (max-width:480px){
+    .termsAndContion_navigation {
+        font-size: 10px;
+    }
+    .FAQ_section {
+        flex-direction: column-reverse;
+    }
+    #termsAndCondition_header {
+        font-size: 17px;
+    }
+    #general_terms_header {
+        font-size: 13px;
+    }
+    .termsAndCondition_section {
+        font-size: 11px;
+    }
+    .definitionAndInterpretation_lists {
+        font-size: 11px;
+    }
+
+}
