@@ -1,7 +1,7 @@
 let isDrawerOpen = false;
 
-// let frontendUrl = "https://miralimammad.netlify.app";
-let frontendUrl = "http://localhost:5500/frontend" 
+let frontendUrl = "https://miralimammad.netlify.app";
+// let frontendUrl = "http://localhost:5500/frontend" 
 let backendUrl = "https://mirali.onrender.com/api";
 // let backendUrl = "http://localhost:8000/api";
 
