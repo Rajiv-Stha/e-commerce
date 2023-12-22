@@ -157,3 +157,65 @@
     color: #fff;
     font-size: 12px;
 }
+
+/* media query  */
+
+@media only screen and (min-width: 769px) and (max-width: 992px){
+    .account_dashboard_box {
+        flex: 1;
+    }
+    .account_information_box {
+        flex: 1;
+        display: flex;
+        gap: 10px;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:768px){
+    .myDashboard_header {
+        font-size: 21px;
+        font-weight: 600;
+    }
+    .account_dashboard_box {
+        flex: 1;
+    }
+    .account_information_box {
+        flex: 1;
+        display: flex;
+        gap: 10px;
+    }
+}
+@media screen and (min-width:480px) and (max-width:599px){
+    .account_dashboard_information_wrapper {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+    }
+}
+@media screen  and (max-width:480px){
+    .account_dashboard_information_wrapper {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+    }
+    .myDashboard_header {
+        font-size: 19px;
+    }
+    .myDashbaord_page_navigate {
+        font-size: 11px;
+    }
+    .account_dashboard_box_items li a {
+        font-size: 12px;
+    }
+    #account_information_box_header {
+        font-size: 14px;
+    }
+    .account_information_info_para p {
+        font-size: 13px;
+    }
+    .account_information_box {
+      
+        display: flex;
+        gap: 12px;
+    }
+}
