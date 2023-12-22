@@ -198,6 +198,16 @@ hr {
 .sliderImg_wrapper {
   width: 100%;
   margin-bottom: 2rem;
+  position: relative;
+}
+.bannerBlack {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+  ;
 }
 
 .sliderImg_wrapper img {
