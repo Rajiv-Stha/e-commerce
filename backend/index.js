@@ -7,15 +7,16 @@ const cors = require("cors");
 const cookieParser = require("cookie-parser");
 const session = require("express-session");
 
+
 app.use(
   cors({
     origin: [ "http://localhost:5500","http://127.0.0.1:5500","https://miralimammad.netlify.app"],
     methods: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
    })
-  );
+);
   
-  
+
   // app.set("trust proxy", 1); // trust first proxy
   app.use(cookieParser());
   app.use(morgan("dev"));
@@ -47,6 +48,10 @@ app.use("/api/auth", require("./routes/authRoute"));
 app.use("/api/category", require("./routes/categoryRoute"));
 app.use("/api/order", require("./routes/orderRoute"));
 app.use("/api/cart", require("./routes/cartRoute"));
+app.use("/api/payment",require("./routes/payment"))
+
+
+
 
 app.use(require("./middlewares/error"));
 app.listen(8000, () => console.log("server listening on port 8000"));

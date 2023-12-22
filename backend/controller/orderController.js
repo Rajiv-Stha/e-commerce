@@ -12,7 +12,8 @@ const getOrder = async (req, res, next) => {
   try {
     let allOrder = await orderModel
       .find({ ...req.query })
-      .populate(["buyer", "item.product"]).sort({createdAt:-1})
+      .populate(["buyer", "item.product"])
+      .sort({ createdAt: -1 });
 
     return res.status(200).json({ message: allOrder, success: true });
   } catch (error) {
@@ -52,4 +53,23 @@ const deleteOrder = async (req, res, next) => {
     next(error);
   }
 };
-module.exports = { createOrder, getOrder, updateOrder, deleteOrder };
+
+const checkIfOrderIsDone = async (req, res, next) => {
+  const { order_intent_secret } = req.params;
+  try {
+    const order = await orderModel.findOne({
+      order_intent_secret,
+    });
+    res.status(200).json({ message: order ? true : false, success: true });
+  } catch (error) {
+    res.status(500).json({ message: "something went wrong", success: true });
+  }
+};
+
+module.exports = {
+  createOrder,
+  getOrder,
+  updateOrder,
+  checkIfOrderIsDone,
+  deleteOrder,
+};

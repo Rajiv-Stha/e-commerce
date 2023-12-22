@@ -1,6 +1,33 @@
 .shoppingCart_content{
     padding: 1rem 0;
 }
+.empty_shopping_cart_content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    height: calc(100vh - 200px);
+}
+.continueShoppingButton{
+    padding: 1rem;
+    border: none;
+    outline: none;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    border-radius: 5px;
+
+    background-color: #0156FF;
+    color: white;
+
+    font-weight: 500;
+}
+.emptyCartText{
+    font-weight: 500;
+    color: rgb(38, 35, 35);
+    font-size: 20px;
+    letter-spacing: 1px;
+
+}
 .shoppingCart_innerContent{
     width: 80%;
     margin: auto;

@@ -1,73 +1,60 @@
-let shippingDetails  = localStorage.getItem("shippingDetails") ?? {}
-if(shippingDetails){
-    shippingDetails = JSON.parse(shippingDetails)
+let shippingDetails = localStorage.getItem("shippingDetails") ?? {};
+if (shippingDetails) {
+  shippingDetails = JSON.parse(shippingDetails);
 }
 
+const displayCarItem = () => {
+  const cart = getCartItems();
+  const user = fetchLoggedInUser();
+  let totalAmount = 0;
 
-const displayCarItem=()=>{
-    const cart = getCartItems();
-    const user = fetchLoggedInUser()
-    let totalAmount = 0;
-
-    cart.forEach(c=>{
-        totalAmount += c.cartQuantity * Number(c.price);
-        document.querySelector(".productsDetails").innerHTML+=`
+  cart.forEach((c) => {
+    totalAmount += c.cartQuantity * Number(c.price);
+    document.querySelector(".productsDetails").innerHTML += `
                          <div class="productItem">
                                 <p class="productName">Monitor 24inch widescreen lovely hai feri</p>
                                 <p class="productCount">x${c.cartQuantity}</p>
                             </div>  
-        `
-    })
-    document.querySelector(".username").innerText = user.username
-    document.querySelector(".summarySubTotalAmount").innerText = `$${totalAmount}`;
-    document.querySelector(".number").innerText = shippingDetails.number
-    document.querySelector(".address").innerText = shippingDetails.address
-}
+        `;
+  });
+  document.querySelector(".username").innerText = user.username;
+  document.querySelector(
+    ".summarySubTotalAmount"
+  ).innerText = `$${totalAmount}`;
+  document.querySelector(".number").innerText = shippingDetails.number;
+  document.querySelector(".address").innerText = shippingDetails.address;
+};
 
-displayCarItem()
+displayCarItem();
 
-const handleBuyclick=async(e)=>{
-    e.preventDefault()
+const handleBuyclick = async (e) => {
+  e.preventDefault();
 
-    let user = fetchLoggedInUser()
+  let user = fetchLoggedInUser();
 
-    if(!user){
-        alert("You need to login first ")
-        return;
-    }
-     const cart = getCartItems()
+  if (!user) {
+    alert("You need to login first ");
+    return;
+  }
 
-    let orderPayload = {
-        totalPrice :0,
-        ...shippingDetails,
-        buyer:user._id
-    }
+  location.href = `${frontendUrl}/public/html/paypal.html`;
 
-    if(cart.length>0){
-      orderPayload.item= cart.map((p)=>{
-      orderPayload.totalPrice+= Number(p.price) * Number(p.cartQuantity);
-      return {  buyQuantity: p.cartQuantity  ,  product  : p._id }
-    })
+  // try {
+  //     const {status,data} = await axios.post(`${backendUrl}/order/create`, orderPayload);
 
-    console.log(orderPayload)
-    try {
-        const {status,data} = await axios.post(`${backendUrl}/order/create`, orderPayload);
+  //     console.log("done",data,status)
 
-        console.log("done",data,status)
+  //     if(status === 200){
+  //         showToast("success", "Product bought successfully");
+  //         removeAllCart()
+  //         displayCarItem()
+  //         setTimeout(()=>{
+  //             location.href=`${frontendUrl}/public/html/successfull.html`
+  //         },2000)
+  //     }
+  // } catch (error) {
+  //     console.log(error)
+  // }
+};
 
-        if(status === 200){
-            showToast("success", "Product bought successfully");
-            removeAllCart()
-            displayCarItem()
-            setTimeout(()=>{
-                location.href=`${frontendUrl}/public/html/successfull.html`
-            },2000)
-        }
-    } catch (error) {
-        console.log(error)
-    }
- 
-}
-}
-document.querySelector(".buyButton").addEventListener("click",handleBuyclick)
-
+document.querySelector(".buyButton").addEventListener("click", handleBuyclick);
