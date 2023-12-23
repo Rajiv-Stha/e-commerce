@@ -130,6 +130,7 @@
 /* media query  */
 
 @media only screen and (min-width: 769px) and (max-width: 992px) {
+    
     #filter_heading {
         font-size: 13px;
     }
@@ -159,6 +160,12 @@
 }
 .allProducts_brand_img_wrapper img{
     width: 60px;
+}
+#topSellingWrapper{
+  flex-direction: column;
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1.3rem;
 }
     }
 
@@ -197,6 +204,12 @@
     .allProducts_brand_img_wrapper img{
         width: 45px;
     } 
+    #topSellingWrapper{
+        flex-direction: column;
+        display: grid;
+          grid-template-columns: 1fr 1fr;
+          row-gap: 1.3rem;
+      }
     }
 
 
@@ -218,7 +231,13 @@
     }
 
     @media screen  and (max-width:480px){
-
+        .bannerSection {
+            height: 170px;
+        }
+        .allProducts_innerContent {
+            gap: 1rem;
+            margin-top: 0;
+        }
         
         .allProducts_card_wrapper {
             
@@ -231,5 +250,21 @@
             grid-template-columns: 1fr;
             grid-template-rows: repeat(auto-fill, minmax(285px, 1fr));
             row-gap: 1rem;
+        }
+        .categoryHeaer {
+            align-items: center;
+        }
+        .topicTitle {
+
+            font-size: 12px;
+        }
+        .topicName {
+            font-size: 10px;
+        }
+        .seeAllButton {
+            padding: 0 10px;
+        }
+        .topicTitle {
+            font-size: 11px;
         }
     }

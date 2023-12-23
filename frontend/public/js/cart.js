@@ -25,7 +25,7 @@ const displayAllCarts = () => {
                                               cart.image[0]
                                             } alt="item">
                                         </div>
-                                    <p>${cart.name}</p>
+                                    <p class="shopping_item_para">${cart.name}</p>
                                     </div>
                                     </td>
                                     <td>${cart.price}</td>
