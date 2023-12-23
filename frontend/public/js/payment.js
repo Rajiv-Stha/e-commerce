@@ -4,7 +4,8 @@
 // Sign in to see your own test API key embedded in code samples.
 
 // The items the customer wants to buy
-
+const apiKey =
+  "sk_test_51OOfAiCBSYxR411iAmU51Ghp09XZFx230V6fwi8IyNP7i4TX29znK5TP1OSclniEW2Qj6gmbhlyWDKUqU115Np7800dg0W9Rnx";
 if (!getCartItems().length) {
   location.href = `${frontendUrl}/index.html`;
 }
@@ -35,7 +36,12 @@ async function initialize() {
 
   const { data } = await axios.post(
     `${backendUrl}/payment/create-payment-intent`,
-    payload
+    payload,
+    {
+      headers: {
+        authorization: `Bearer ${apiKey}`,
+      },
+    }
   );
   const clientSecret = data.message;
 
