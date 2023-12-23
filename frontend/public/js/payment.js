@@ -39,7 +39,7 @@ async function initialize() {
     payload,
     {
       headers: {
-        authorization: `Bearer ${apiKey}`,
+        Authorization: `Bearer ${apiKey}`,
       },
     }
   );
