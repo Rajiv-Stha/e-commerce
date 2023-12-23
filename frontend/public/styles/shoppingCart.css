@@ -220,3 +220,118 @@
     font-size: 12px;
     padding-left: 5px;
 }
+
+
+/* media query  */
+@media only screen and (min-width: 769px) and (max-width: 992px){
+
+    .shoppingCart_card_summary_wrapper {
+        flex-direction: column-reverse;
+    }
+
+}
+
+@media screen and (min-width:600px) and (max-width:768px){
+    .shoppingCart_card_summary_wrapper {
+        flex-direction: column-reverse;
+    }
+    .continueShoppingButton {
+       font-size: 12px;
+    }
+    #heading_shoppingCart{
+        font-size: 19px;
+    }
+    #summaryCart_para1 {
+        font-size: 15px;
+    }
+    .summaryCart_dis_code_box p {
+        font-size: 15px;
+    }
+    .shoppingCart_table thead tr th {
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (min-width:480px) and (max-width:599px){
+    .shoppingCart_card_summary_wrapper {
+        flex-direction: column-reverse;
+    }
+    .shoppingCart_table th, .shoppingCart_table td {
+        padding: 8px 4px;
+        border-bottom: 1px solid #CACDD8;
+    }
+    .shopping_item_para{
+        font-size: 12px !important;
+    }
+
+    .continueShoppingButton {
+        font-size: 11px;
+     }
+
+     #heading_shoppingCart{
+        font-size: 18px;
+    }
+    #summaryCart_para1 {
+        font-size: 14px;
+    }
+    .summaryCart_dis_code_box p {
+        font-size: 14px;
+    }
+    .shoppingCart_table thead tr th {
+        font-size: 12px;
+    }
+    #shoppingOrder_total_cost {
+        font-size: 14px;
+    }
+     .emptyCartText {
+        font-size: 18px;
+    }
+    #empty_cart_img{
+        width: 380px;
+    }
+}
+
+@media screen  and (max-width:480px){
+    .shoppingCart_card_summary_wrapper {
+        flex-direction: column-reverse;
+    }
+    .shoppingCart_table th, .shoppingCart_table td {
+        padding: 8px 4px;
+        border-bottom: 1px solid #CACDD8;
+    }
+    .shopping_item_para{
+        font-size: 11px !important;
+    }
+    .continueShoppingButton {
+        font-size: 10px;
+        padding: 12px 10px;
+     }
+     #heading_shoppingCart{
+        font-size: 16px;
+    }
+    #summaryCart_para1 {
+        font-size: 13px;
+    }
+    .summaryCart_dis_code_box p {
+        font-size: 13px;
+    }
+    .shoppingCart_table thead tr th {
+        font-size: 11px;
+    }
+    #shoppingOrder_total_cost {
+        font-size: 13px;
+    }
+    .shoppingCart_table th, .shoppingCart_table td {
+        font-size: 11px;
+    }
+     .emptyCartText {
+        font-size: 15px;
+    }
+    #empty_cart_img{
+        width: 280px;
+    }
+    .empty_shopping_cart_content {
+        height: auto;
+    }
+}
