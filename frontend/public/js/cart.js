@@ -1,8 +1,14 @@
 let cartItem = getCartItems();
+
 const displayAllCarts = () => {
+  cartItem = getCartItems();
+
   if (!cartItem.length) {
     document.querySelector(".shoppingCart_innerContent").style.display = "none";
+    document.querySelector(".empty_shopping_cart_content").style.display =
+      "flex";
   } else {
+    document.querySelector(".shoppingCart_innerContent").style.display = "flex";
     document.querySelector(".empty_shopping_cart_content").style.display =
       "none";
   }
@@ -25,7 +31,9 @@ const displayAllCarts = () => {
                                               cart.image[0]
                                             } alt="item">
                                         </div>
-                                    <p class="shopping_item_para">${cart.name}</p>
+                                    <p class="shopping_item_para">${
+                                      cart.name
+                                    }</p>
                                     </div>
                                     </td>
                                     <td>${cart.price}</td>
