@@ -1130,12 +1130,12 @@ font-size: 13px;
   }
 
   .footer_subscribe_box_right input {
-    width: 300px;
+    width: 400px;
 
   }
 
   .footer_subscribe_box_left h1 {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .footer_subscribe_box_left p {
@@ -1143,15 +1143,26 @@ font-size: 13px;
   }
 
   .footerInnerContent {
-    width: 100%;
+    width: 80%;
   }
   .footer_subscribe_btn {
     height: 40px;
     font-size: 10px;
     width: 105px;
 }
+.footer_items_box {
+  gap: 8px;
+  flex-direction: column;
+  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 1.3rem;
+}
 .footer_subscribe_box {
   padding: 0 6px;
+
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
 }
 
 }
