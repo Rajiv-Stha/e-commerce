@@ -23,7 +23,7 @@ const displayAllCarts = () => {
   cartItem.forEach((cart) => {
     totalAmount += cart.cartQuantity * Number(cart.price);
     document.querySelector(".shoppingCartProductList").innerHTML += `
-                                <tr>
+                                <tr class="cart_product_item">
                                     <td >
                                     <div class="shoppingCart_item_name_box">
                                         <div class="shoppingCart_item_img_box">
@@ -43,6 +43,11 @@ const displayAllCarts = () => {
                                     <td>${
                                       cart.cartQuantity * Number(cart.price)
                                     }</td>
+                                    <td>
+                                      <button id=${
+                                        cart._id
+                                      } class="removeCartButton">remove</button>
+                                    </td>
                                 </tr>
         `;
   });
@@ -53,6 +58,15 @@ const displayAllCarts = () => {
   document.querySelector("#shoppingOrder_total_cost").innerText = `$${
     totalAmount + 10
   }`;
+
+  document.querySelectorAll(".removeCartButton").forEach((element) => {
+    element.addEventListener("click", () => {
+      const id = element.getAttribute("id");
+      const cartItem = element.closest(".cart_product_item");
+      cartItem.remove();
+      removeProductFromCart(id);
+    });
+  });
 };
 const handleBuyclick = (e) => {
   e.preventDefault();

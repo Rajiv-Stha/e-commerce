@@ -46,9 +46,10 @@ document.querySelector("#uploadForm").addEventListener("submit", async (e) => {
       document.querySelector("#quantity").value = "";
       document.querySelector("#category").value = "";
       document.querySelector("#tags").value = "";
-      document.querySelector(".productImagePreview").innerHTML = "";
       document.querySelector(".specsContainer").innerHTML = "";
+      document.querySelector(".productImagePreview").innerHTML = "";
       showToast("success", "uploaded successfully");
+      location.href = `${frontendUrl}/index.html`;
     }
   } catch (error) {
     console.log(error);

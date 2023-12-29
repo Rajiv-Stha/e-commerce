@@ -221,7 +221,17 @@
     padding-left: 5px;
 }
 
-
+.removeCartButton{
+    background-color: #0156FF;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    color: white;
+    height: 30px;
+    padding:  0 10px;
+    letter-spacing: 0.9px;
+    font-size: 13px;
+}
 /* media query  */
 @media only screen and (min-width: 769px) and (max-width: 992px){
 

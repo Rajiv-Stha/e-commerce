@@ -33,9 +33,20 @@ const addToCart = (newCart) => {
   console.log("setting", newCart);
   localStorage.setItem("cart", JSON.stringify(allProducts));
 };
+// The selected code is a function that removes all items from the user's cart. It does this by removing the "cart" key from local storage. This function is used when the user clicks the "Clear Cart" button.
+// This function is used to clear the cart in case the user wants to start over, or if there was an error and they want to start again.
+
 function removeAllCart() {
   localStorage.removeItem("cart");
 }
+
 const removeUserFromLs = () => {
   localStorage.removeItem("user");
+};
+
+const removeProductFromCart = (id) => {
+  const cart = getCartItems();
+  const products = cart.filter((item) => item._id !== id);
+
+  localStorage.setItem("cart", JSON.stringify(products));
 };
