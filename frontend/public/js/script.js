@@ -5,15 +5,20 @@ let frontendUrl = "http://127.0.0.1:5500/frontend";
 // let backendUrl = "https://mirali.onrender.com/api";
 let backendUrl = "http://localhost:8000/api";
 // console.log("stripe key",STRIPE_PK)
+//stripe: An instance of the Stripe API for handling payments.
 const stripe = Stripe(
   "pk_test_51OOfAiCBSYxR411iCdN4WIRTrOavlsgy9WRuPasn50Fw5eRNuyXoeP7xgxqYIuBVIxe02LI8yxUbd6DnhC3AOlLy007dWcMWF6"
 );
 
+//buyProductPayload: An object used to store data related to buying a product.
 let buyProductPayload = {};
 
+//displayCartCount: Updates the displayed cart count in the UI.
 const displayCartCount = () => {
   document.querySelector(".cartCount").innerText = getCartItems().length;
 };
+
+//fetchLoggedInUser: Retrieves the logged-in user from local storage.
 const fetchLoggedInUser = () => {
   let user = localStorage.getItem("user");
   if (user) {
@@ -21,6 +26,8 @@ const fetchLoggedInUser = () => {
   }
   return user ?? null;
 };
+
+//displayLoginUser: Updates the UI based on whether a user is logged in.
 const displayLoginUser = () => {
   if (fetchLoggedInUser()) {
     let user = fetchLoggedInUser();
@@ -43,6 +50,7 @@ displayLoginUser();
 displayCartCount();
 displayCartItems();
 
+//Listens for changes in the search input and fetches search results from the backend API.
 document
   .querySelector(".searchModalInput")
   ?.addEventListener("change", async (e) => {
@@ -63,6 +71,10 @@ document
         `;
     });
   });
+
+//// Event listeners for search and navigation icons
+
+//Handles opening and closing the search modal and navigation drawer.
 document
   .querySelector(".nav_searchIconDrawer")
   .addEventListener("click", () => {
@@ -75,6 +87,8 @@ document.querySelector(".nav_searchIcon")?.addEventListener("click", () => {
 document.querySelector(".closeModalButton")?.addEventListener("click", () => {
   document.querySelector(".searchModal").style.display = "none";
 });
+
+//Fetches top-selling products from the backend and dynamically creates HTML elements to display them.
 const fetchTopSellingProopducts = async () => {
   // topSelling
 
@@ -136,3 +150,5 @@ document.querySelector(".navMenuIcon").addEventListener("click", () => {
 document.querySelector(".closeDrawer").addEventListener("click", () => {
   document.querySelector(".drawer").style.width = "0%";
 });
+
+//This code manages the user interface, handles user authentication, displays products, and provides search functionality. It also includes navigation and drawer handling for a responsive user experience.
