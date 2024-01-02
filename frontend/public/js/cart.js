@@ -65,6 +65,8 @@ const displayAllCarts = () => {
       const cartItem = element.closest(".cart_product_item");
       cartItem.remove();
       removeProductFromCart(id);
+      displayAllCarts();
+      displayCartCount();
     });
   });
 };

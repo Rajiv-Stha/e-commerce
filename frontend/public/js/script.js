@@ -2,8 +2,8 @@ let isDrawerOpen = false;
 
 // let frontendUrl = "https://miralimammad.netlify.app";
 let frontendUrl = "http://127.0.0.1:5500/frontend";
-let backendUrl = "https://mirali.onrender.com/api";
-// let backendUrl = "http://localhost:8000/api";
+// let backendUrl = "https://mirali.onrender.com/api";
+let backendUrl = "http://localhost:8000/api";
 // console.log("stripe key",STRIPE_PK)
 const stripe = Stripe(
   "pk_test_51OOfAiCBSYxR411iCdN4WIRTrOavlsgy9WRuPasn50Fw5eRNuyXoeP7xgxqYIuBVIxe02LI8yxUbd6DnhC3AOlLy007dWcMWF6"

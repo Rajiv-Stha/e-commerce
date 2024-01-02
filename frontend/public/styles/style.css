@@ -219,9 +219,45 @@ hr {
   top: 0;
   left: 0;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
   height: 100%;
+  padding: 2rem;
+  justify-content: center;
   background: linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
   ;
+}
+.bannerBlack h1{
+  font-size: 3rem !important;
+  color: white !important;
+  font-weight: bold;
+}
+.search_product_banner_black_bg{
+background-color: #0156FF;
+border-radius: 36px;
+width: fit-content;
+height: 100%;
+align-items: center;
+justify-content: center;
+padding: 0 1.5rem;
+height: 55px;
+margin-top: 2rem;
+color: white;
+outline: none;
+letter-spacing: 1px;
+border: none;
+font-size: 17px;
+}
+.blue_text{
+  color: #0156FF !important;
+}
+.bannaer_black_text{
+  line-height: 30px;
+  font-size: 18px;
+  letter-spacing: 0.9px;
+  color: rgb(211, 202, 202);
+  
 }
 
 .sliderImg_wrapper img {
