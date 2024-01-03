@@ -1,9 +1,9 @@
 let isDrawerOpen = false;
 
-let frontendUrl = "https://miralimammad.netlify.app";
-// let frontendUrl = "http://127.0.0.1:5500/frontend";
-let backendUrl = "https://mirali.onrender.com/api";
-// let backendUrl = "http://localhost:8000/api";
+// let frontendUrl = "https://miralimammad.netlify.app";
+let frontendUrl = "http://127.0.0.1:5500/frontend";
+// let backendUrl = "https://mirali.onrender.com/api";
+let backendUrl = "http://localhost:8000/api";
 // console.log("stripe key",STRIPE_PK)
 //stripe: An instance of the Stripe API for handling payments.
 const stripe = Stripe(
