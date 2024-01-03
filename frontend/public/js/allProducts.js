@@ -63,7 +63,7 @@ const bannerImageMapping = {
   phone: "../images/mobile.jpeg",
   watch: "../images/watch.jpeg",
   headphone: "../images/headphone.jpeg",
-  gaming: "../images/gaming.avif",
+  gaming: "../images/gaming.jpeg",
   computer: "../images/computer.jpg",
   camera: "../images/camera.jpeg",
 };
