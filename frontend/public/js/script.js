@@ -49,7 +49,9 @@ const displayCartItems = () => {
 displayLoginUser();
 displayCartCount();
 displayCartItems();
-
+const handleOpenSearchModal = () => {
+  document.querySelector(".searchModal").style.display = "flex";
+};
 //Listens for changes in the search input and fetches search results from the backend API.
 document
   .querySelector(".searchModalInput")
@@ -81,12 +83,15 @@ document
     document.querySelector(".drawer").style.width = "0%";
     document.querySelector(".searchModal").style.display = "flex";
   });
-document.querySelector(".nav_searchIcon")?.addEventListener("click", () => {
-  document.querySelector(".searchModal").style.display = "flex";
-});
+document
+  .querySelector(".nav_searchIcon")
+  ?.addEventListener("click", handleOpenSearchModal);
 document.querySelector(".closeModalButton")?.addEventListener("click", () => {
   document.querySelector(".searchModal").style.display = "none";
 });
+document
+  .querySelector(".search_product_banner_black_bg_button")
+  .addEventListener("click", handleOpenSearchModal);
 
 //Fetches top-selling products from the backend and dynamically creates HTML elements to display them.
 const fetchTopSellingProopducts = async () => {
