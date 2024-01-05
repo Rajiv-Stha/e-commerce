@@ -91,7 +91,7 @@ document.querySelector(".closeModalButton")?.addEventListener("click", () => {
 });
 document
   .querySelector(".search_product_banner_black_bg_button")
-  .addEventListener("click", handleOpenSearchModal);
+  ?.addEventListener("click", handleOpenSearchModal);
 
 //Fetches top-selling products from the backend and dynamically creates HTML elements to display them.
 const fetchTopSellingProopducts = async () => {
